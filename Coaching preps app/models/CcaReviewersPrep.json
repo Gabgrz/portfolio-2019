@@ -1,0 +1,140 @@
+{
+  "dataSources": [{
+    "key": "RSQarhLMUr7O0O0cODEE7FPYg0KvISej_default",
+    "modelKey": "RSQarhLMUr7O0O0cODEE7FPYg0KvISej",
+    "name": "CcaReviewersPrep",
+    "pageSize": 100,
+    "type": "QUERY"
+  }],
+  "defaultDataSourceKey": "RSQarhLMUr7O0O0cODEE7FPYg0KvISej_default",
+  "eventPermissions": [
+    {
+      "name": "ON_CREATE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_LOAD",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_SAVE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_DELETE",
+      "type": "inherited"
+    }
+  ],
+  "events": [],
+  "fields": [
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "CrossMatch",
+      "integer": false,
+      "key": "ZHwNS6zrjNB5R97X",
+      "name": "CrossMatch",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "DisputeAccuracy",
+      "integer": false,
+      "key": "sf5OYijgOZYQor3A",
+      "name": "DisputeAccuracy",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "DisputeRate",
+      "integer": false,
+      "key": "q2hvoaDqPIOuvp4b",
+      "name": "DisputeRate",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "Comment",
+      "key": "iyTFljK1tp3susxL",
+      "minLength": 0,
+      "name": "Comment",
+      "required": false,
+      "type": "String"
+    },
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "Score",
+      "integer": false,
+      "key": "qK8xIVepcT8xc5SX",
+      "name": "Score",
+      "required": false,
+      "type": "Number"
+    }
+  ],
+  "key": "RSQarhLMUr7O0O0cODEE7FPYg0KvISej",
+  "modelPermission": {
+    "name": "model permission",
+    "permissions": [
+      {"type": "nobody"},
+      {
+        "groupKeys": ["Admins"],
+        "type": "groups"
+      }
+    ],
+    "type": "compound"
+  },
+  "name": "CcaReviewersPrep",
+  "type": "BRIX",
+  "userIdFieldType": "USER_ID"
+}

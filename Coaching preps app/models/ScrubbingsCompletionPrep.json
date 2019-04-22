@@ -1,0 +1,177 @@
+{
+  "dataSources": [{
+    "key": "BKNDIV0RUqic7ac42U52HibWYnI1PgGq_default",
+    "modelKey": "BKNDIV0RUqic7ac42U52HibWYnI1PgGq",
+    "name": "ScrubbingsCompletionPrep",
+    "pageSize": 100,
+    "type": "QUERY"
+  }],
+  "defaultDataSourceKey": "BKNDIV0RUqic7ac42U52HibWYnI1PgGq_default",
+  "eventPermissions": [
+    {
+      "name": "ON_CREATE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_LOAD",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_SAVE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_DELETE",
+      "type": "inherited"
+    }
+  ],
+  "events": [],
+  "fields": [
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "Dorys",
+      "displayName": "# Dorys",
+      "integer": false,
+      "key": "NBvLiDIElXSxdZsA",
+      "name": "Dorys",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "Scrubbings",
+      "integer": false,
+      "key": "LppKY9rZgwGOO6Di",
+      "name": "Scrubbings",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "RCAs",
+      "integer": false,
+      "key": "6cV4bRY12PXc3Vwh",
+      "name": "RCAs",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "InternalDisputes",
+      "integer": false,
+      "key": "krum4OH714bDlwu8",
+      "name": "InternalDisputes",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "ExternalDisputes",
+      "integer": false,
+      "key": "2NFRTQZ1OORsPRXH",
+      "name": "ExternalDisputes",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "Comment",
+      "key": "2Yw6Tx5hPAKlKjEA",
+      "minLength": 0,
+      "name": "Comment",
+      "required": false,
+      "type": "String"
+    },
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "Score",
+      "integer": false,
+      "key": "cxdu1mNZtKgsXlXC",
+      "name": "Score",
+      "required": false,
+      "type": "Number"
+    }
+  ],
+  "key": "BKNDIV0RUqic7ac42U52HibWYnI1PgGq",
+  "modelPermission": {
+    "name": "model permission",
+    "permissions": [
+      {"type": "nobody"},
+      {
+        "groupKeys": ["Admins"],
+        "type": "groups"
+      }
+    ],
+    "type": "compound"
+  },
+  "name": "ScrubbingsCompletionPrep",
+  "type": "BRIX",
+  "userIdFieldType": "USER_ID"
+}

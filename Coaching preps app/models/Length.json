@@ -1,0 +1,62 @@
+{
+  "dataSources": [{
+    "customQuery": "var len \u003d app.models.Supervisors.newQuery().run().length;\nconsole.log(\u0027Length of Calculated model is: \u0027+len);\nvar results \u003d [];\n\nfor(var i \u003d 0; i \u003c len; i++){\n  results[i] \u003d len;\n}\n\nreturn results;",
+    "key": "mx9jPplZasoShVfy67gaaKprdCKFoeAr_default",
+    "modelKey": "mx9jPplZasoShVfy67gaaKprdCKFoeAr",
+    "name": "Length",
+    "type": "QUERY"
+  }],
+  "defaultDataSourceKey": "mx9jPplZasoShVfy67gaaKprdCKFoeAr_default",
+  "eventPermissions": [
+    {
+      "name": "ON_CREATE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_LOAD",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_SAVE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_DELETE",
+      "type": "inherited"
+    }
+  ],
+  "events": [],
+  "fields": [{
+    "allowedFilterOperators": [
+      "eq",
+      "gt",
+      "gte",
+      "in",
+      "lt",
+      "lte",
+      "ne",
+      "notIn"
+    ],
+    "columnName": "Length",
+    "integer": false,
+    "key": "Z0An0pJh4U3BSKeW",
+    "name": "Length",
+    "required": false,
+    "type": "Number"
+  }],
+  "key": "mx9jPplZasoShVfy67gaaKprdCKFoeAr",
+  "modelPermission": {
+    "name": "model permission",
+    "permissions": [
+      {"type": "nobody"},
+      {
+        "groupKeys": ["Admins"],
+        "type": "groups"
+      }
+    ],
+    "type": "compound"
+  },
+  "name": "Length",
+  "type": "CALCULATED",
+  "userIdFieldType": "USER_ID"
+}

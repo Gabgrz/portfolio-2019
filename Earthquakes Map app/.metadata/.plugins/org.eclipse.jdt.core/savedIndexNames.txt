@@ -1,0 +1,1 @@
+INDEX VERSION 1.131+D:\Gabriel\Programming\Portfolio\EarthquakesMap\.metadata\.plugins\org.eclipse.jdt.core

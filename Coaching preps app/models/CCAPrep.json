@@ -1,0 +1,339 @@
+{
+  "dataSources": [{
+    "key": "w1cdmGvCwKZlF6AoGgSzpIQGdR7bwxgA_default",
+    "modelKey": "w1cdmGvCwKZlF6AoGgSzpIQGdR7bwxgA",
+    "name": "CCAPrep",
+    "pageSize": 100,
+    "type": "QUERY"
+  }],
+  "defaultDataSourceKey": "w1cdmGvCwKZlF6AoGgSzpIQGdR7bwxgA_default",
+  "eventPermissions": [
+    {
+      "name": "ON_CREATE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_LOAD",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_SAVE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_DELETE",
+      "type": "inherited"
+    }
+  ],
+  "events": [],
+  "fields": [
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "ScoreInternal",
+      "displayName": "Internal Score",
+      "integer": false,
+      "key": "PXquSrx10c5UMmfs",
+      "name": "ScoreInternal",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "ScoreExternal",
+      "displayName": "External Score",
+      "integer": false,
+      "key": "zbZUnPKGr1pztJWm",
+      "name": "ScoreExternal",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "Comment",
+      "key": "26MN0SU1xL9pC8Kq",
+      "minLength": 0,
+      "name": "Comment",
+      "required": false,
+      "type": "String"
+    },
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "CasesReviewed",
+      "displayName": "Cases Reviewed (link)",
+      "key": "JxRTpxFoTiJIp6FB",
+      "minLength": 0,
+      "name": "CasesReviewed",
+      "required": false,
+      "type": "String"
+    },
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "NumCasesReviewed",
+      "displayName": "# Of Cases Reviewed",
+      "integer": false,
+      "key": "MUr26oTMmOW8xh1n",
+      "name": "NumCasesReviewed",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "in",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "IsInsigth",
+      "defaultValue": false,
+      "key": "TrLGIFA3gXzA0OCT",
+      "name": "IsInsigth",
+      "required": false,
+      "type": "Boolean"
+    },
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "PendingReviews",
+      "displayName": "Pending Reviews ",
+      "integer": false,
+      "key": "9FxcN6T7cU9e8LPW",
+      "name": "PendingReviews",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "Exceptions",
+      "integer": false,
+      "key": "KTzbJx6CCjH1ifuc",
+      "name": "Exceptions",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "Dorys",
+      "displayName": "# Dorys",
+      "integer": false,
+      "key": "mUpToleaKTntw9Rp",
+      "name": "Dorys",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "Scrubbings",
+      "integer": false,
+      "key": "itxX5RSZaRwjRwL0",
+      "name": "Scrubbings",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "RCAs",
+      "integer": false,
+      "key": "OVx3t09LglUn1N5p",
+      "name": "RCAs",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "ExternalDisputesReviews",
+      "integer": false,
+      "key": "E0KQgkjspeB9ytsU",
+      "name": "ExternalDisputesReviews",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "DisputeAccuracy",
+      "displayName": "Dispute accuracy",
+      "integer": false,
+      "key": "T94ZjROi7tDCtyfR",
+      "name": "DisputeAccuracy",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "InternalDisputes",
+      "displayName": "Internal Disputes",
+      "integer": false,
+      "key": "6GYY6zU64qDMtrdU",
+      "name": "InternalDisputes",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "CrossMatch",
+      "integer": false,
+      "key": "XxIr2Et32muWdg4C",
+      "name": "CrossMatch",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "DisputeRate",
+      "integer": false,
+      "key": "XS0JbUoqfduMwOKZ",
+      "name": "DisputeRate",
+      "required": false,
+      "type": "Number"
+    }
+  ],
+  "key": "w1cdmGvCwKZlF6AoGgSzpIQGdR7bwxgA",
+  "modelPermission": {
+    "name": "model permission",
+    "type": "compoundEveryone"
+  },
+  "name": "CCAPrep",
+  "type": "BRIX",
+  "userIdFieldType": "USER_ID"
+}

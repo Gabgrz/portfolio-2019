@@ -1,0 +1,105 @@
+{
+  "dataSources": [
+    {
+      "key": "YenDTCgkLdCAa8kodxP2wHBkxk2Ucqgi_default",
+      "modelKey": "YenDTCgkLdCAa8kodxP2wHBkxk2Ucqgi",
+      "name": "Supervisors",
+      "pageSize": 100,
+      "type": "QUERY"
+    },
+    {
+      "customProperties": [{
+        "category": "Custom Properties",
+        "deprecated": false,
+        "designTime": false,
+        "experimental": false,
+        "hidden": false,
+        "key": "SIuZl0y1",
+        "name": "myUsername",
+        "persisted": true,
+        "readonly": false,
+        "type": "String"
+      }],
+      "customQuery": "result \u003d [];\nquery.filters.Username._equals \u003d query.parameters.myUsername;\nresult \u003d query.run();\nreturn result;",
+      "key": "y8jKaaQhkvOFPTkD6ZEHHEjlXWPA7dWy",
+      "modelKey": "YenDTCgkLdCAa8kodxP2wHBkxk2Ucqgi",
+      "name": "MeDatasource",
+      "pageSize": 100,
+      "type": "QUERY"
+    }
+  ],
+  "defaultDataSourceKey": "YenDTCgkLdCAa8kodxP2wHBkxk2Ucqgi_default",
+  "eventPermissions": [
+    {
+      "name": "ON_CREATE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_LOAD",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_SAVE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_DELETE",
+      "type": "inherited"
+    }
+  ],
+  "events": [],
+  "fields": [
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "Name",
+      "key": "Yml4JvQjGBLIoZoT",
+      "minLength": 0,
+      "name": "Name",
+      "required": false,
+      "type": "String"
+    },
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "Username",
+      "key": "HVLydpWqmUMbeg2a",
+      "minLength": 0,
+      "name": "Username",
+      "required": false,
+      "type": "String"
+    }
+  ],
+  "key": "YenDTCgkLdCAa8kodxP2wHBkxk2Ucqgi",
+  "modelPermission": {
+    "name": "model permission",
+    "type": "compoundEveryone"
+  },
+  "name": "Supervisors",
+  "type": "BRIX",
+  "userIdFieldType": "USER_ID"
+}

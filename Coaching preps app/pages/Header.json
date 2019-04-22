@@ -1,0 +1,112 @@
+{
+  "class": "Panel",
+  "key": "kUYh3RMcOrh85XoZsLvPZWEiF0uaFkcU",
+  "permission": {
+    "name": "canRead",
+    "type": "compoundEveryone"
+  },
+  "propList": [
+    {
+      "k": "styleMap",
+      "v": {
+        "name": "styleMap",
+        "properties": [],
+        "type": "PropertyMap[styleMap]"
+      }
+    },
+    {
+      "k": "width",
+      "v": 1200
+    },
+    {
+      "k": "height",
+      "v": 64
+    },
+    {
+      "k": "name",
+      "v": "Header"
+    },
+    {
+      "k": "isCustomWidget",
+      "v": true
+    },
+    {
+      "k": "top",
+      "v": 4
+    },
+    {
+      "k": "left",
+      "v": 4
+    },
+    {
+      "k": "layout",
+      "v": "horizontal"
+    },
+    {
+      "k": "justify",
+      "v": "spaceBetween"
+    },
+    {
+      "k": "alignChildren",
+      "v": "center"
+    },
+    {
+      "k": "children",
+      "v": {
+        "list": [{
+          "class": "SimpleLabel",
+          "key": "0_532280634",
+          "propList": [
+            {
+              "k": "styleMap",
+              "v": {
+                "name": "styleMap",
+                "properties": [],
+                "type": "PropertyMap[styleMap]"
+              }
+            },
+            {
+              "k": "width",
+              "v": 100
+            },
+            {
+              "k": "height",
+              "v": 20
+            },
+            {
+              "k": "name",
+              "v": "Label1"
+            },
+            {
+              "k": "left",
+              "v": 0
+            },
+            {
+              "k": "top",
+              "v": 0
+            },
+            {
+              "k": "autoWidth",
+              "v": true
+            },
+            {
+              "k": "autoHeight",
+              "v": true
+            },
+            {
+              "k": "text",
+              "v": "Preps App"
+            }
+          ],
+          "type": "ComponentInfo"
+        }],
+        "type": "List[ComponentInfo]"
+      }
+    },
+    {
+      "k": "pageCss",
+      "v": "\n"
+    }
+  ],
+  "type": "ComponentInfo"
+}

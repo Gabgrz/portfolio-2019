@@ -1,0 +1,129 @@
+{
+  "dataSources": [{
+    "key": "qlHHnPtFlksvQ7gKtUX7Fk9vjHpn9orn_default",
+    "modelKey": "qlHHnPtFlksvQ7gKtUX7Fk9vjHpn9orn",
+    "name": "Vendors",
+    "pageSize": 100,
+    "type": "QUERY"
+  }],
+  "defaultDataSourceKey": "qlHHnPtFlksvQ7gKtUX7Fk9vjHpn9orn_default",
+  "displayNameField": "OWG0Y4aorTSrqdIN",
+  "eventPermissions": [
+    {
+      "name": "ON_CREATE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_LOAD",
+      "type": "compoundEveryone"
+    },
+    {
+      "name": "ON_SAVE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_DELETE",
+      "type": "inherited"
+    }
+  ],
+  "events": [],
+  "fields": [
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "id",
+      "key": "POVyL1CE2acb9xAI",
+      "minLength": 0,
+      "name": "id",
+      "required": false,
+      "sqlType": "VARCHAR",
+      "sqlTypeColumnSize": "255",
+      "type": "String",
+      "uid": true,
+      "unsigned": false,
+      "writableAfterSave": false
+    },
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "Name",
+      "description": "This is my G description for Name",
+      "key": "OWG0Y4aorTSrqdIN",
+      "minLength": 0,
+      "name": "Name",
+      "required": false,
+      "sqlType": "VARCHAR",
+      "sqlTypeColumnSize": "255",
+      "type": "String",
+      "unsigned": false
+    },
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "Email",
+      "description": "This is my G description for Email",
+      "key": "MUTlifNggmFgdvlA",
+      "minLength": 0,
+      "name": "Email",
+      "required": false,
+      "sqlType": "VARCHAR",
+      "sqlTypeColumnSize": "255",
+      "type": "String",
+      "unsigned": false
+    }
+  ],
+  "key": "qlHHnPtFlksvQ7gKtUX7Fk9vjHpn9orn",
+  "modelPermission": {
+    "name": "model permission",
+    "permissions": [
+      {"type": "nobody"},
+      {
+        "groupKeys": ["Admins"],
+        "type": "groups"
+      }
+    ],
+    "type": "compound"
+  },
+  "name": "Vendors",
+  "primaryKeyColumns": ["POVyL1CE2acb9xAI"],
+  "table": "Vendors",
+  "type": "SPECKLE",
+  "userIdFieldType": "USER_ID",
+  "view": false
+}

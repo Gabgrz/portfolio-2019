@@ -1,0 +1,163 @@
+{
+  "dataSources": [{
+    "key": "6OQZgPcxwQjWsR9tN2KximlCduhczKI6_default",
+    "modelKey": "6OQZgPcxwQjWsR9tN2KximlCduhczKI6",
+    "name": "PPHPrep",
+    "pageSize": 100,
+    "type": "QUERY"
+  }],
+  "defaultDataSourceKey": "6OQZgPcxwQjWsR9tN2KximlCduhczKI6_default",
+  "eventPermissions": [
+    {
+      "name": "ON_CREATE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_LOAD",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_SAVE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_DELETE",
+      "type": "inherited"
+    }
+  ],
+  "events": [],
+  "fields": [
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "Score",
+      "integer": false,
+      "key": "wHG12kNv1AwO9BIl",
+      "name": "Score",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "PhoneState",
+      "integer": false,
+      "key": "Cw3ytwH4bGZKgD5g",
+      "name": "PhoneState",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "ProductiveHours",
+      "key": "O2TrvZW6dZSMgY9O",
+      "minLength": 0,
+      "name": "ProductiveHours",
+      "required": false,
+      "type": "String"
+    },
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "AHT",
+      "key": "weCoUXNVaLIxXDqr",
+      "minLength": 0,
+      "name": "AHT",
+      "required": false,
+      "type": "String"
+    },
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "ACW",
+      "key": "iUM9ob2MYqA78Uti",
+      "minLength": 0,
+      "name": "ACW",
+      "required": false,
+      "type": "String"
+    },
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "Comment",
+      "key": "xiwNrFTHXfmO34w2",
+      "minLength": 0,
+      "name": "Comment",
+      "required": false,
+      "type": "String"
+    }
+  ],
+  "key": "6OQZgPcxwQjWsR9tN2KximlCduhczKI6",
+  "modelPermission": {
+    "name": "model permission",
+    "type": "compoundEveryone"
+  },
+  "name": "PPHPrep",
+  "type": "BRIX",
+  "userIdFieldType": "USER_ID"
+}

@@ -1,0 +1,102 @@
+{
+  "dataSources": [{
+    "key": "obofYD4v7q8KkXT9hC3DXQlOzyg4y4Ul_default",
+    "modelKey": "obofYD4v7q8KkXT9hC3DXQlOzyg4y4Ul",
+    "name": "Languages",
+    "pageSize": 100,
+    "type": "QUERY"
+  }],
+  "defaultDataSourceKey": "obofYD4v7q8KkXT9hC3DXQlOzyg4y4Ul_default",
+  "displayNameField": "E7kzb4wnYhfcFhuN",
+  "eventPermissions": [
+    {
+      "name": "ON_CREATE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_LOAD",
+      "type": "compoundEveryone"
+    },
+    {
+      "name": "ON_SAVE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_DELETE",
+      "type": "inherited"
+    }
+  ],
+  "events": [],
+  "fields": [
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "id",
+      "key": "5WwK3ecF1UDMwfq9",
+      "minLength": 0,
+      "name": "id",
+      "required": false,
+      "sqlType": "VARCHAR",
+      "sqlTypeColumnSize": "255",
+      "type": "String",
+      "uid": true,
+      "unsigned": false,
+      "writableAfterSave": false
+    },
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "Language",
+      "key": "E7kzb4wnYhfcFhuN",
+      "minLength": 0,
+      "name": "Language",
+      "required": false,
+      "sqlType": "VARCHAR",
+      "sqlTypeColumnSize": "255",
+      "type": "String",
+      "unsigned": false
+    }
+  ],
+  "key": "obofYD4v7q8KkXT9hC3DXQlOzyg4y4Ul",
+  "modelPermission": {
+    "name": "model permission",
+    "permissions": [
+      {"type": "nobody"},
+      {
+        "groupKeys": ["Admins"],
+        "type": "groups"
+      }
+    ],
+    "type": "compound"
+  },
+  "name": "Languages",
+  "primaryKeyColumns": ["5WwK3ecF1UDMwfq9"],
+  "table": "Languages",
+  "type": "SPECKLE",
+  "userIdFieldType": "USER_ID",
+  "view": false
+}

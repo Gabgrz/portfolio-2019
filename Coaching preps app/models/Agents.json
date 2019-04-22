@@ -1,0 +1,153 @@
+{
+  "dataSources": [
+    {
+      "customQuery": "",
+      "key": "JWP6h7Weln7yRLrWKlRqQ8ya7DyFIfjV_default",
+      "modelKey": "JWP6h7Weln7yRLrWKlRqQ8ya7DyFIfjV",
+      "name": "Agents",
+      "onLoad": "",
+      "pageSize": 250,
+      "type": "QUERY",
+      "wherePathMappings": []
+    },
+    {
+      "customProperties": [
+        {
+          "category": "Custom Properties",
+          "deprecated": false,
+          "designTime": false,
+          "experimental": false,
+          "hidden": false,
+          "key": "BUbkQOzO",
+          "name": "myUsername",
+          "persisted": true,
+          "readonly": false,
+          "type": "String"
+        },
+        {
+          "category": "Custom Properties",
+          "deprecated": false,
+          "designTime": false,
+          "experimental": false,
+          "hidden": false,
+          "key": "ro8QjygZ",
+          "name": "IsAgentsBySup",
+          "persisted": true,
+          "readonly": false,
+          "type": "Boolean"
+        }
+      ],
+      "customQuery": "if(query.parameters.IsAgentsBySup \u003d\u003d\u003d true){\n\nvar results \u003d [];\nquery.filters.relSupervisors.Username._equals \u003d query.parameters.myUsername;\nresults \u003d query.run();\nreturn results;\n  \n  }\n\nelse{\n\n  var results2 \u003d [];\n  results2 \u003d query.run();\n  return results2;\n  \n}\n\n/*\n\nquery.parameters.IsBySup \u003d true;\n\nif(query.parameters.IsAgentsBySup \u003d\u003d\u003d true)\n{\n\nvar results \u003d [];\nrelAgents.relSupervisors.Username._equals \u003d query.parameters.Username;\nquery.sorting.Date._descending();\nresults \u003d query.run();\nreturn results;\n  \n}\n\nelse{\n\n  var results \u003d [];\n  query.sorting.Date._descending();\n  results \u003d query.run();\n  return results;\n\n\n}\n*/",
+      "key": "3Wjyn6wNf4M9v4dCCwm0hXPYRwIw6DwT",
+      "modelKey": "JWP6h7Weln7yRLrWKlRqQ8ya7DyFIfjV",
+      "name": "AgentsBySups",
+      "pageSize": 250,
+      "type": "QUERY",
+      "wherePathMappings": []
+    },
+    {
+      "autoLoad": false,
+      "customQuery": "var results \u003d [];\nquery.sorting.Name._ascending();\nresults \u003d query.run();\nreturn results;",
+      "key": "9H5umcxeYLQBBPFyYtdyJ8RYPkIJS80k",
+      "modelKey": "JWP6h7Weln7yRLrWKlRqQ8ya7DyFIfjV",
+      "name": "AgentsAnaly",
+      "pageSize": 100,
+      "type": "QUERY",
+      "wherePathMappings": []
+    },
+    {
+      "customProperties": [
+        {
+          "category": "Custom Properties",
+          "deprecated": false,
+          "designTime": false,
+          "experimental": false,
+          "hidden": false,
+          "key": "eUjo3ukm",
+          "name": "InitialDate",
+          "persisted": true,
+          "readonly": false,
+          "sqlType": "DATETIME",
+          "type": "Date"
+        },
+        {
+          "category": "Custom Properties",
+          "deprecated": false,
+          "designTime": false,
+          "experimental": false,
+          "hidden": false,
+          "key": "irTEL4YZ",
+          "name": "EndDate",
+          "persisted": true,
+          "readonly": false,
+          "sqlType": "DATETIME",
+          "type": "Date"
+        }
+      ],
+      "customQuery": "var monthlyPrep \u003d [false,false,false,false];\n\n\n// var month \u003d query.parameters.InitialDate.getMonth();\n\nvar firstWeek \u003d new Date(2018,4,1);\nvar endWeek1 \u003d new Date(2018,4,7);\n\n/*\nvar secondWeek \u003d new Date(2018,month,8);\nvar thirdWeek \u003d new Date(2018,month,15);\nvar fourthWeek \u003d new Date(2018,month,22);\n*/\n\nquery.filters.relPreps.Date._greaterThanOrEquals \u003d firstWeek;\nquery.filters.relPreps.Date._lessThanOrEquals \u003d endWeek1;\n\nif(query.run()){\n\n  \n\n}\n\nreturn monthlyPrep;",
+      "key": "HfKIXsUxVHW11XlMjwh8o1LEUDewZdIr",
+      "modelKey": "JWP6h7Weln7yRLrWKlRqQ8ya7DyFIfjV",
+      "name": "IsWeeklyPrep",
+      "pageSize": 100,
+      "type": "QUERY",
+      "wherePathMappings": []
+    }
+  ],
+  "defaultDataSourceKey": "JWP6h7Weln7yRLrWKlRqQ8ya7DyFIfjV_default",
+  "eventPermissions": [
+    {
+      "name": "ON_CREATE",
+      "type": "compoundEveryone"
+    },
+    {
+      "name": "ON_LOAD",
+      "type": "compoundEveryone"
+    },
+    {
+      "name": "ON_SAVE",
+      "type": "compoundEveryone"
+    },
+    {
+      "name": "ON_DELETE",
+      "type": "compoundEveryone"
+    }
+  ],
+  "events": [],
+  "fields": [{
+    "allowedFilterOperators": [
+      "contains",
+      "eq",
+      "gt",
+      "gte",
+      "in",
+      "lt",
+      "lte",
+      "ne",
+      "notContains",
+      "notIn",
+      "notStartsWith",
+      "startsWith"
+    ],
+    "columnName": "Name",
+    "key": "UlZ84Fapvfnwmz0v",
+    "minLength": 0,
+    "name": "Name",
+    "required": false,
+    "type": "String"
+  }],
+  "key": "JWP6h7Weln7yRLrWKlRqQ8ya7DyFIfjV",
+  "modelPermission": {
+    "name": "model permission",
+    "permissions": [
+      {"type": "nobody"},
+      {
+        "groupKeys": ["Admins"],
+        "type": "groups"
+      }
+    ],
+    "type": "compound"
+  },
+  "name": "Agents",
+  "type": "BRIX",
+  "userIdFieldType": "USER_ID"
+}

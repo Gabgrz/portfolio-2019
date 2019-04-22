@@ -1,0 +1,102 @@
+{
+  "dataSources": [{
+    "key": "qjSic6rhlSJtaaU34mFnL9EWR8XYiHG2_default",
+    "modelKey": "qjSic6rhlSJtaaU34mFnL9EWR8XYiHG2",
+    "name": "Components",
+    "pageSize": 100,
+    "type": "QUERY"
+  }],
+  "defaultDataSourceKey": "qjSic6rhlSJtaaU34mFnL9EWR8XYiHG2_default",
+  "displayNameField": "8WftvvHOvAn2WooZ",
+  "eventPermissions": [
+    {
+      "name": "ON_CREATE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_LOAD",
+      "type": "compoundEveryone"
+    },
+    {
+      "name": "ON_SAVE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_DELETE",
+      "type": "inherited"
+    }
+  ],
+  "events": [],
+  "fields": [
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "id",
+      "key": "VRN3EchvXeL9L2wR",
+      "minLength": 0,
+      "name": "id",
+      "required": false,
+      "sqlType": "VARCHAR",
+      "sqlTypeColumnSize": "255",
+      "type": "String",
+      "uid": true,
+      "unsigned": false,
+      "writableAfterSave": false
+    },
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "Component",
+      "key": "8WftvvHOvAn2WooZ",
+      "minLength": 0,
+      "name": "Component",
+      "required": false,
+      "sqlType": "VARCHAR",
+      "sqlTypeColumnSize": "255",
+      "type": "String",
+      "unsigned": false
+    }
+  ],
+  "key": "qjSic6rhlSJtaaU34mFnL9EWR8XYiHG2",
+  "modelPermission": {
+    "name": "model permission",
+    "permissions": [
+      {"type": "nobody"},
+      {
+        "groupKeys": ["Admins"],
+        "type": "groups"
+      }
+    ],
+    "type": "compound"
+  },
+  "name": "Components",
+  "primaryKeyColumns": ["VRN3EchvXeL9L2wR"],
+  "table": "Components",
+  "type": "SPECKLE",
+  "userIdFieldType": "USER_ID",
+  "view": false
+}

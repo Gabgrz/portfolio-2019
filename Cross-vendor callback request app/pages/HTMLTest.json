@@ -1,0 +1,54 @@
+{
+  "class": "Panel",
+  "key": "ci4vQSTIpvYdcR1dR8SUj5UmYL6EsVyt",
+  "permission": {
+    "name": "canRead",
+    "type": "compoundEveryone"
+  },
+  "propList": [
+    {
+      "k": "styleMap",
+      "v": {
+        "name": "styleMap",
+        "properties": [],
+        "type": "PropertyMap[styleMap]"
+      }
+    },
+    {
+      "k": "width",
+      "v": 960
+    },
+    {
+      "k": "height",
+      "v": 960
+    },
+    {
+      "k": "name",
+      "v": "HTMLTest"
+    },
+    {
+      "k": "variant",
+      "v": "Background"
+    },
+    {
+      "k": "top",
+      "v": 4
+    },
+    {
+      "k": "left",
+      "v": 4
+    },
+    {
+      "k": "children",
+      "v": {
+        "list": [],
+        "type": "List[ComponentInfo]"
+      }
+    },
+    {
+      "k": "pageCss",
+      "v": "  "
+    }
+  ],
+  "type": "ComponentInfo"
+}

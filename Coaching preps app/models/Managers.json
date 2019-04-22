@@ -1,0 +1,90 @@
+{
+  "dataSources": [{
+    "key": "ha2tfwwibUAXZa8FCHAEIAHlIp9B2FlH_default",
+    "modelKey": "ha2tfwwibUAXZa8FCHAEIAHlIp9B2FlH",
+    "name": "Managers",
+    "pageSize": 100,
+    "type": "QUERY"
+  }],
+  "defaultDataSourceKey": "ha2tfwwibUAXZa8FCHAEIAHlIp9B2FlH_default",
+  "eventPermissions": [
+    {
+      "name": "ON_CREATE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_LOAD",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_SAVE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_DELETE",
+      "type": "inherited"
+    }
+  ],
+  "events": [],
+  "fields": [
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "Name",
+      "key": "ijWAPUf8lUUijmrV",
+      "minLength": 0,
+      "name": "Name",
+      "required": false,
+      "type": "String"
+    },
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "Username",
+      "key": "Ze2m0M2e3cjF8wWc",
+      "minLength": 0,
+      "name": "Username",
+      "required": false,
+      "type": "String"
+    }
+  ],
+  "key": "ha2tfwwibUAXZa8FCHAEIAHlIp9B2FlH",
+  "modelPermission": {
+    "name": "model permission",
+    "permissions": [
+      {"type": "nobody"},
+      {
+        "groupKeys": ["Admins"],
+        "type": "groups"
+      }
+    ],
+    "type": "compound"
+  },
+  "name": "Managers",
+  "type": "BRIX",
+  "userIdFieldType": "USER_ID"
+}

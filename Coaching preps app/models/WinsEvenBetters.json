@@ -1,0 +1,59 @@
+{
+  "dataSources": [{
+    "key": "RPK95Kqn3JEQA2OSescZqYbCPHIXIxNQ_default",
+    "modelKey": "RPK95Kqn3JEQA2OSescZqYbCPHIXIxNQ",
+    "name": "WinsEvenBetters",
+    "pageSize": 100,
+    "type": "QUERY"
+  }],
+  "defaultDataSourceKey": "RPK95Kqn3JEQA2OSescZqYbCPHIXIxNQ_default",
+  "eventPermissions": [
+    {
+      "name": "ON_CREATE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_LOAD",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_SAVE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_DELETE",
+      "type": "inherited"
+    }
+  ],
+  "events": [],
+  "fields": [{
+    "allowedFilterOperators": [
+      "contains",
+      "eq",
+      "gt",
+      "gte",
+      "in",
+      "lt",
+      "lte",
+      "ne",
+      "notContains",
+      "notIn",
+      "notStartsWith",
+      "startsWith"
+    ],
+    "columnName": "Name",
+    "key": "3m0WhDSJkqF1nmq4",
+    "minLength": 0,
+    "name": "Name",
+    "required": false,
+    "type": "String"
+  }],
+  "key": "RPK95Kqn3JEQA2OSescZqYbCPHIXIxNQ",
+  "modelPermission": {
+    "name": "model permission",
+    "type": "compoundEveryone"
+  },
+  "name": "WinsEvenBetters",
+  "type": "BRIX",
+  "userIdFieldType": "USER_ID"
+}

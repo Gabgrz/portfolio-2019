@@ -1,0 +1,64 @@
+{
+  "dataSources": [{
+    "customQuery": "return getRemainingDailyQuota_();",
+    "key": "LXfBE8E57oBdDWxKIBV38CnPZ4eEOb1b_default",
+    "modelKey": "LXfBE8E57oBdDWxKIBV38CnPZ4eEOb1b",
+    "name": "RemainingDailyQuota",
+    "pageSize": 1,
+    "type": "QUERY"
+  }],
+  "defaultDataSourceKey": "LXfBE8E57oBdDWxKIBV38CnPZ4eEOb1b_default",
+  "eventPermissions": [
+    {
+      "name": "ON_CREATE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_LOAD",
+      "type": "compoundEveryone"
+    },
+    {
+      "name": "ON_SAVE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_DELETE",
+      "type": "inherited"
+    }
+  ],
+  "events": [],
+  "fields": [{
+    "allowedFilterOperators": [
+      "eq",
+      "gt",
+      "gte",
+      "in",
+      "lt",
+      "lte",
+      "ne",
+      "notIn"
+    ],
+    "columnName": "RemainingQuota",
+    "description": "Number of remaining emails a user can send for the rest of the day",
+    "integer": false,
+    "key": "KnQcE0KVbdwUExmu",
+    "name": "RemainingQuota",
+    "required": false,
+    "type": "Number"
+  }],
+  "key": "LXfBE8E57oBdDWxKIBV38CnPZ4eEOb1b",
+  "modelPermission": {
+    "name": "model permission",
+    "permissions": [
+      {"type": "nobody"},
+      {
+        "groupKeys": ["Admins"],
+        "type": "groups"
+      }
+    ],
+    "type": "compound"
+  },
+  "name": "RemainingDailyQuota",
+  "type": "CALCULATED",
+  "userIdFieldType": "USER_ID"
+}

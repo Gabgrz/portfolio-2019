@@ -1,0 +1,23 @@
+{
+  "databaseId": "SPECKLE",
+  "events": [],
+  "joinTableName": "relVendors_HAS_relTimes",
+  "joinTablePkColumns": [],
+  "key": "Xr40JdyE8Eu6yH6RA6mS51RuCSd8bwmc",
+  "owner": "NONE",
+  "permission": {
+    "name": "CanModifyAssociations",
+    "type": "inherited"
+  },
+  "relationSubtype": "joinTableRelation",
+  "sourceArity": "MANY",
+  "sourceForeignKeyColumn": "relVendors_fk",
+  "sourceModelKey": "qlHHnPtFlksvQ7gKtUX7Fk9vjHpn9orn",
+  "sourceName": "relVendors",
+  "sourceSortAscending": true,
+  "targetArity": "MANY",
+  "targetForeignKeyColumn": "relTimes_fk",
+  "targetModelKey": "GpRYpxLiDferp3phlQEhFDnAoVs5n58w",
+  "targetName": "relTimes",
+  "targetSortAscending": true
+}

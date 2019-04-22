@@ -1,0 +1,141 @@
+{
+  "dataSources": [{
+    "key": "uETNLp3nF5JtVCwGN16cmCTiA114rsgu_default",
+    "modelKey": "uETNLp3nF5JtVCwGN16cmCTiA114rsgu",
+    "name": "QAPrep",
+    "pageSize": 100,
+    "type": "QUERY"
+  }],
+  "defaultDataSourceKey": "uETNLp3nF5JtVCwGN16cmCTiA114rsgu_default",
+  "eventPermissions": [
+    {
+      "name": "ON_CREATE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_LOAD",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_SAVE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_DELETE",
+      "type": "inherited"
+    }
+  ],
+  "events": [],
+  "fields": [
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "Score",
+      "integer": false,
+      "key": "wQE2SH3uIUqy1PI8",
+      "name": "Score",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "NumCasesReviewed",
+      "displayName": "# Of Cases Reviewed",
+      "integer": false,
+      "key": "Xp4j0EIbdkIUIr4s",
+      "name": "NumCasesReviewed",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "CasesReviewed",
+      "displayName": "Cases Reviewed (link)",
+      "key": "qOG5BxvZfVapLlKA",
+      "minLength": 0,
+      "name": "CasesReviewed",
+      "required": false,
+      "type": "String"
+    },
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "Field2",
+      "description": "Metric/data to be determined",
+      "displayName": "Any metric/data (pending)",
+      "integer": false,
+      "key": "Xo8bZhV10GKSPOoc",
+      "name": "Field2",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "Comment",
+      "key": "Pm9z8vqzs7PrEZho",
+      "minLength": 0,
+      "name": "Comment",
+      "required": false,
+      "type": "String"
+    }
+  ],
+  "key": "uETNLp3nF5JtVCwGN16cmCTiA114rsgu",
+  "modelPermission": {
+    "name": "model permission",
+    "type": "compoundEveryone"
+  },
+  "name": "QAPrep",
+  "type": "BRIX",
+  "userIdFieldType": "USER_ID"
+}

@@ -1,0 +1,582 @@
+{
+  "class": "Panel",
+  "customPropertyDescriptions": [
+    {
+      "category": "Custom Properties",
+      "deprecated": false,
+      "designTime": false,
+      "experimental": false,
+      "hidden": false,
+      "key": "2SqzEcg2",
+      "name": "NewProperty",
+      "persisted": true,
+      "readonly": false,
+      "type": "String"
+    },
+    {
+      "category": "Custom Properties",
+      "deprecated": false,
+      "designTime": false,
+      "experimental": false,
+      "hidden": false,
+      "key": "GwA64bh8",
+      "name": "HtmlElement2",
+      "persisted": true,
+      "readonly": false,
+      "type": "String"
+    }
+  ],
+  "customPropertyValues": {
+    "name": "CustomProperties",
+    "properties": [
+      {
+        "name": "2SqzEcg2",
+        "value": {
+          "isNull": true,
+          "type": "String"
+        }
+      },
+      {
+        "name": "GwA64bh8",
+        "value": {
+          "isNull": true,
+          "type": "String"
+        }
+      }
+    ],
+    "type": "PropertyMap[CustomProperties]"
+  },
+  "key": "eAQB68al5YCIna8YrPeE1GKI1tqXFsBU",
+  "permission": {
+    "name": "canRead",
+    "type": "compoundEveryone"
+  },
+  "propList": [
+    {
+      "k": "styleMap",
+      "v": {
+        "name": "styleMap",
+        "properties": [],
+        "type": "PropertyMap[styleMap]"
+      }
+    },
+    {
+      "k": "width",
+      "v": 960
+    },
+    {
+      "k": "height",
+      "v": 2000
+    },
+    {
+      "k": "name",
+      "v": "JsLibrary"
+    },
+    {
+      "k": "variant",
+      "v": "Background"
+    },
+    {
+      "k": "top",
+      "v": 4
+    },
+    {
+      "k": "left",
+      "v": 4
+    },
+    {
+      "k": "children",
+      "v": {
+        "list": [
+          {
+            "class": "HtmlArea",
+            "key": "0_1740822621",
+            "propList": [
+              {
+                "k": "styleMap",
+                "v": {
+                  "name": "styleMap",
+                  "properties": [],
+                  "type": "PropertyMap[styleMap]"
+                }
+              },
+              {
+                "k": "html",
+                "v": ""
+              },
+              {
+                "k": "width",
+                "v": 702
+              },
+              {
+                "k": "height",
+                "v": 312
+              },
+              {
+                "k": "name",
+                "v": "Html1"
+              },
+              {
+                "k": "left",
+                "v": 75
+              },
+              {
+                "k": "top",
+                "v": 59
+              },
+              {
+                "k": "autoWidth",
+                "v": false
+              },
+              {
+                "k": "autoHeight",
+                "v": false
+              },
+              {
+                "k": "right",
+                "v": 166
+              },
+              {
+                "k": "bottom",
+                "v": 589
+              },
+              {
+                "k": "constrain_right",
+                "v": false
+              },
+              {
+                "k": "constrain_width",
+                "v": true
+              },
+              {
+                "k": "constrain_bottom",
+                "v": false
+              },
+              {
+                "k": "constrain_height",
+                "v": true
+              },
+              {
+                "k": "onLoad",
+                "v": "showChart(widget);"
+              }
+            ],
+            "type": "ComponentInfo"
+          },
+          {
+            "class": "HtmlArea",
+            "key": "0_35823622",
+            "propList": [
+              {
+                "k": "styleMap",
+                "v": {
+                  "name": "styleMap",
+                  "properties": [],
+                  "type": "PropertyMap[styleMap]"
+                }
+              },
+              {
+                "k": "html",
+                "v": ""
+              },
+              {
+                "k": "width",
+                "v": 702
+              },
+              {
+                "k": "height",
+                "v": 546
+              },
+              {
+                "k": "name",
+                "v": "Html2"
+              },
+              {
+                "k": "left",
+                "v": 75
+              },
+              {
+                "k": "top",
+                "v": 488
+              },
+              {
+                "k": "autoWidth",
+                "v": false
+              },
+              {
+                "k": "autoHeight",
+                "v": false
+              },
+              {
+                "k": "right",
+                "v": 183
+              },
+              {
+                "k": "bottom",
+                "v": 466
+              },
+              {
+                "k": "constrain_right",
+                "v": false
+              },
+              {
+                "k": "constrain_width",
+                "v": true
+              },
+              {
+                "k": "constrain_bottom",
+                "v": false
+              },
+              {
+                "k": "constrain_height",
+                "v": true
+              },
+              {
+                "k": "onLoad",
+                "v": "canvasChart(widget);"
+              },
+              {
+                "k": "constrain_left",
+                "v": true
+              },
+              {
+                "k": "constrain_minWidth",
+                "v": false
+              },
+              {
+                "k": "constrain_maxWidth",
+                "v": false
+              },
+              {
+                "k": "constrain_top",
+                "v": true
+              },
+              {
+                "k": "constrain_minHeight",
+                "v": false
+              },
+              {
+                "k": "constrain_maxHeight",
+                "v": false
+              }
+            ],
+            "type": "ComponentInfo"
+          },
+          {
+            "class": "TextField",
+            "key": "0_462244990",
+            "propList": [
+              {
+                "k": "styleMap",
+                "v": {
+                  "name": "styleMap",
+                  "properties": [],
+                  "type": "PropertyMap[styleMap]"
+                }
+              },
+              {
+                "k": "width",
+                "v": 300
+              },
+              {
+                "k": "height",
+                "v": 32
+              },
+              {
+                "k": "name",
+                "v": "TextBox1"
+              },
+              {
+                "k": "left",
+                "v": 75
+              },
+              {
+                "k": "top",
+                "v": 416
+              },
+              {
+                "k": "autoHeight",
+                "v": true
+              },
+              {
+                "k": "right",
+                "v": 585
+              },
+              {
+                "k": "bottom",
+                "v": 1052
+              }
+            ],
+            "type": "ComponentInfo"
+          },
+          {
+            "class": "TextField",
+            "key": "0_1382487006",
+            "propList": [
+              {
+                "k": "styleMap",
+                "v": {
+                  "name": "styleMap",
+                  "properties": [],
+                  "type": "PropertyMap[styleMap]"
+                }
+              },
+              {
+                "k": "width",
+                "v": 300
+              },
+              {
+                "k": "height",
+                "v": 33
+              },
+              {
+                "k": "name",
+                "v": "TextBox2"
+              },
+              {
+                "k": "left",
+                "v": 477
+              },
+              {
+                "k": "top",
+                "v": 416
+              },
+              {
+                "k": "autoHeight",
+                "v": true
+              },
+              {
+                "k": "right",
+                "v": 183
+              },
+              {
+                "k": "bottom",
+                "v": 1051
+              },
+              {
+                "k": "constrain_left",
+                "v": true
+              },
+              {
+                "k": "constrain_right",
+                "v": false
+              },
+              {
+                "k": "constrain_width",
+                "v": true
+              },
+              {
+                "k": "constrain_minWidth",
+                "v": false
+              },
+              {
+                "k": "constrain_maxWidth",
+                "v": false
+              },
+              {
+                "k": "constrain_top",
+                "v": true
+              },
+              {
+                "k": "constrain_bottom",
+                "v": false
+              },
+              {
+                "k": "constrain_height",
+                "v": true
+              },
+              {
+                "k": "constrain_minHeight",
+                "v": false
+              },
+              {
+                "k": "constrain_maxHeight",
+                "v": false
+              },
+              {
+                "k": "onLoad",
+                "v": {
+                  "isNull": true,
+                  "type": "String"
+                }
+              },
+              {
+                "k": "bindings",
+                "v": {
+                  "list": [{
+                    "sourceExpression": "value",
+                    "targetExpression": "@pages.eAQB68al5YCIna8YrPeE1GKI1tqXFsBU.properties.GwA64bh8",
+                    "targetLiteralExpression": "@pages.JsLibrary.properties.HtmlElement2",
+                    "type": "BindingInfo"
+                  }],
+                  "type": "List[BindingInfo]"
+                }
+              }
+            ],
+            "type": "ComponentInfo"
+          },
+          {
+            "class": "SimpleButton",
+            "key": "0_1021468504",
+            "propList": [
+              {
+                "k": "styleMap",
+                "v": {
+                  "name": "styleMap",
+                  "properties": [],
+                  "type": "PropertyMap[styleMap]"
+                }
+              },
+              {
+                "k": "width",
+                "v": 92
+              },
+              {
+                "k": "height",
+                "v": 36
+              },
+              {
+                "k": "name",
+                "v": "Button1"
+              },
+              {
+                "k": "left",
+                "v": 804
+              },
+              {
+                "k": "top",
+                "v": 335
+              },
+              {
+                "k": "autoWidth",
+                "v": true
+              },
+              {
+                "k": "autoHeight",
+                "v": true
+              },
+              {
+                "k": "right",
+                "v": 64
+              },
+              {
+                "k": "bottom",
+                "v": 1129
+              },
+              {
+                "k": "action",
+                "v": "getMyElement();"
+              }
+            ],
+            "type": "ComponentInfo"
+          },
+          {
+            "class": "HtmlArea",
+            "key": "1_253091439",
+            "propList": [
+              {
+                "k": "styleMap",
+                "v": {
+                  "name": "styleMap",
+                  "properties": [],
+                  "type": "PropertyMap[styleMap]"
+                }
+              },
+              {
+                "k": "html",
+                "v": "\u003c!DOCTYPE HTML\u003e\n\u003chtml\u003e\n\u003chead\u003e  \n\u003cscript\u003e\nwindow.onload \u003d function () {\n\nvar chart \u003d new CanvasJS.Chart(\"chartContainer\", {\n\tanimationEnabled: true,\n\ttheme: \"light2\",\n\ttitle:{\n\t\ttext: \"Simple Line Chart\"\n\t},\n\taxisY:{\n\t\tincludeZero: false\n\t},\n\tdata: [{        \n\t\ttype: \"line\",       \n\t\tdataPoints: [\n\t\t\t{ y: 450 },\n\t\t\t{ y: 414},\n\t\t\t{ y: 520, indexLabel: \"highest\",markerColor: \"green\", markerType: \"triangle\" },\n\t\t\t{ y: 460 },\n\t\t\t{ y: 450 },\n\t\t\t{ y: 500 },\n\t\t\t{ y: 480 },\n\t\t\t{ y: 480 },\n\t\t\t{ y: 410 , indexLabel: \"lowest\",markerColor: \"DarkSlateGrey\", markerType: \"cross\" },\n\t\t\t{ y: 500 },\n\t\t\t{ y: 480 },\n\t\t\t{ y: 510 }\n\t\t]\n\t}]\n});\nchart.render();\n\n}\n\u003c\/script\u003e\n\u003c\/head\u003e\n\u003cbody\u003e\n\u003cdiv id\u003d\"chartContainer\" style\u003d\"height: 370px; width: 100%;\"\u003e\u003c\/div\u003e\n\u003cscript src\u003d\"https://canvasjs.com/assets/script/canvasjs.min.js\"\u003e\u003c\/script\u003e\n\u003c\/body\u003e\n\u003c\/html\u003e"
+              },
+              {
+                "k": "width",
+                "v": 702
+              },
+              {
+                "k": "height",
+                "v": 546
+              },
+              {
+                "k": "name",
+                "v": "Html3"
+              },
+              {
+                "k": "left",
+                "v": 75
+              },
+              {
+                "k": "top",
+                "v": 1074
+              },
+              {
+                "k": "autoWidth",
+                "v": false
+              },
+              {
+                "k": "autoHeight",
+                "v": false
+              },
+              {
+                "k": "right",
+                "v": 166
+              },
+              {
+                "k": "bottom",
+                "v": -120
+              },
+              {
+                "k": "constrain_right",
+                "v": false
+              },
+              {
+                "k": "constrain_width",
+                "v": true
+              },
+              {
+                "k": "constrain_bottom",
+                "v": false
+              },
+              {
+                "k": "constrain_height",
+                "v": true
+              },
+              {
+                "k": "onLoad",
+                "v": "canvasChart(widget);"
+              },
+              {
+                "k": "constrain_left",
+                "v": true
+              },
+              {
+                "k": "constrain_minWidth",
+                "v": false
+              },
+              {
+                "k": "constrain_maxWidth",
+                "v": false
+              },
+              {
+                "k": "constrain_top",
+                "v": true
+              },
+              {
+                "k": "constrain_minHeight",
+                "v": false
+              },
+              {
+                "k": "constrain_maxHeight",
+                "v": false
+              },
+              {
+                "k": "allowUnsafeHtml",
+                "v": true
+              }
+            ],
+            "type": "ComponentInfo"
+          }
+        ],
+        "type": "List[ComponentInfo]"
+      }
+    }
+  ],
+  "type": "ComponentInfo"
+}

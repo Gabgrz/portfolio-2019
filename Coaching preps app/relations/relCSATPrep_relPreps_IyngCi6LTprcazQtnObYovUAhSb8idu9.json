@@ -1,0 +1,18 @@
+{
+  "databaseId": "BRIX",
+  "events": [],
+  "key": "IyngCi6LTprcazQtnObYovUAhSb8idu9",
+  "owner": "NONE",
+  "permission": {
+    "name": "CanModifyAssociations",
+    "type": "inherited"
+  },
+  "sourceArity": "ONE",
+  "sourceModelKey": "jogldCaErLnR8YiDbx2oBEt4sx4kWZKt",
+  "sourceName": "relCSATPrep",
+  "sourceSortAscending": true,
+  "targetArity": "ONE",
+  "targetModelKey": "mbCFFZ4bH8AGYvbktZhIzTELfEHJ2Mtw",
+  "targetName": "relPreps",
+  "targetSortAscending": true
+}

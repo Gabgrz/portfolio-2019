@@ -1,0 +1,23 @@
+{
+  "databaseId": "SPECKLE",
+  "events": [],
+  "joinTableName": "relVendors_HAS_relLanguages",
+  "joinTablePkColumns": [],
+  "key": "A6KOZLjYqWYwlRkeJcVdvrIcNUkI6cdz",
+  "owner": "NONE",
+  "permission": {
+    "name": "CanModifyAssociations",
+    "type": "inherited"
+  },
+  "relationSubtype": "joinTableRelation",
+  "sourceArity": "MANY",
+  "sourceForeignKeyColumn": "relVendors_fk",
+  "sourceModelKey": "qlHHnPtFlksvQ7gKtUX7Fk9vjHpn9orn",
+  "sourceName": "relVendors",
+  "sourceSortAscending": true,
+  "targetArity": "MANY",
+  "targetForeignKeyColumn": "relLanguages_fk",
+  "targetModelKey": "obofYD4v7q8KkXT9hC3DXQlOzyg4y4Ul",
+  "targetName": "relLanguages",
+  "targetSortAscending": true
+}

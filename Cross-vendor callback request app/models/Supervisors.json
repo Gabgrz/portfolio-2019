@@ -1,0 +1,144 @@
+{
+  "dataSources": [
+    {
+      "customQuery": "",
+      "key": "BawTvzYf1sQeFnI6mlg0h34ysz9weShR_default",
+      "modelKey": "BawTvzYf1sQeFnI6mlg0h34ysz9weShR",
+      "name": "Supervisors",
+      "pageSize": 100,
+      "type": "QUERY"
+    },
+    {
+      "customProperties": [{
+        "category": "Custom Properties",
+        "deprecated": false,
+        "designTime": false,
+        "experimental": false,
+        "hidden": false,
+        "key": "pKZQLSYK",
+        "name": "supName",
+        "persisted": true,
+        "readonly": false,
+        "type": "String"
+      }],
+      "customQuery": "var results \u003d [];\nquery.filters.Supervisor._equals \u003d query.parameters.supName;\nresults \u003d query.run();\nreturn results;",
+      "key": "d2kb6y7mlKrZN3A3KdLNLAry6kCsHigP",
+      "modelKey": "BawTvzYf1sQeFnI6mlg0h34ysz9weShR",
+      "name": "supEmail",
+      "pageSize": 100,
+      "type": "QUERY"
+    }
+  ],
+  "defaultDataSourceKey": "BawTvzYf1sQeFnI6mlg0h34ysz9weShR_default",
+  "eventPermissions": [
+    {
+      "name": "ON_CREATE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_LOAD",
+      "type": "compoundEveryone"
+    },
+    {
+      "name": "ON_SAVE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_DELETE",
+      "type": "inherited"
+    }
+  ],
+  "events": [],
+  "fields": [
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "autoIncrement": true,
+      "columnName": "id",
+      "integer": false,
+      "key": "SDXcM6C6opKinUW1",
+      "name": "id",
+      "required": false,
+      "sqlType": "INT",
+      "type": "Number",
+      "unsigned": false,
+      "writableAfterSave": false
+    },
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "Supervisor",
+      "key": "XduCh6zxbHEJaWIE",
+      "minLength": 0,
+      "name": "Supervisor",
+      "required": false,
+      "sqlType": "VARCHAR",
+      "sqlTypeColumnSize": "255",
+      "type": "String",
+      "unsigned": false
+    },
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "Email",
+      "key": "4TN0z1wZfirs2cWP",
+      "minLength": 0,
+      "name": "Email",
+      "required": false,
+      "sqlType": "VARCHAR",
+      "sqlTypeColumnSize": "255",
+      "type": "String",
+      "unsigned": false
+    }
+  ],
+  "key": "BawTvzYf1sQeFnI6mlg0h34ysz9weShR",
+  "modelPermission": {
+    "name": "model permission",
+    "permissions": [
+      {"type": "nobody"},
+      {
+        "groupKeys": ["Admins"],
+        "type": "groups"
+      }
+    ],
+    "type": "compound"
+  },
+  "name": "Supervisors",
+  "primaryKeyColumns": ["SDXcM6C6opKinUW1"],
+  "table": "Supervisors",
+  "type": "SPECKLE",
+  "userIdFieldType": "USER_ID",
+  "view": false
+}

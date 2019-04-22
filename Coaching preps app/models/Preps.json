@@ -1,0 +1,572 @@
+{
+  "dataSources": [
+    {
+      "autoLoad": false,
+      "customQuery": "",
+      "key": "mbCFFZ4bH8AGYvbktZhIzTELfEHJ2Mtw_default",
+      "modelKey": "mbCFFZ4bH8AGYvbktZhIzTELfEHJ2Mtw",
+      "name": "PrepsBackup",
+      "pageSize": 100,
+      "type": "QUERY",
+      "wherePathMappings": []
+    },
+    {
+      "autoLoad": false,
+      "customProperties": [
+        {
+          "category": "Custom Properties",
+          "deprecated": false,
+          "designTime": false,
+          "experimental": false,
+          "hidden": false,
+          "key": "rc49Ui8S",
+          "name": "FirstDate",
+          "persisted": true,
+          "readonly": false,
+          "sqlType": "DATETIME",
+          "type": "Date"
+        },
+        {
+          "category": "Custom Properties",
+          "deprecated": false,
+          "designTime": false,
+          "experimental": false,
+          "hidden": false,
+          "key": "R8Mcf4p2",
+          "name": "EndDate",
+          "persisted": true,
+          "readonly": false,
+          "sqlType": "DATETIME",
+          "type": "Date"
+        },
+        {
+          "category": "Custom Properties",
+          "deprecated": false,
+          "designTime": false,
+          "experimental": false,
+          "hidden": false,
+          "key": "B4FE7l7d",
+          "name": "AgentName",
+          "persisted": true,
+          "readonly": false,
+          "type": "String"
+        },
+        {
+          "category": "Custom Properties",
+          "deprecated": false,
+          "designTime": false,
+          "experimental": false,
+          "hidden": false,
+          "key": "0b5vRMvG",
+          "name": "Kpi",
+          "persisted": true,
+          "readonly": false,
+          "type": "String"
+        },
+        {
+          "category": "Custom Properties",
+          "deprecated": false,
+          "designTime": false,
+          "experimental": false,
+          "hidden": false,
+          "key": "Q65imJXq",
+          "name": "IsBqPerf",
+          "persisted": true,
+          "readonly": false,
+          "type": "Boolean"
+        },
+        {
+          "category": "Custom Properties",
+          "deprecated": false,
+          "designTime": false,
+          "experimental": false,
+          "hidden": false,
+          "key": "sT1yuRGA",
+          "name": "Supervisor",
+          "persisted": true,
+          "readonly": false,
+          "type": "String"
+        },
+        {
+          "category": "Custom Properties",
+          "deprecated": false,
+          "designTime": false,
+          "experimental": false,
+          "hidden": false,
+          "key": "0flDsu7t",
+          "name": "IsBySup",
+          "persisted": true,
+          "readonly": false,
+          "type": "Boolean"
+        },
+        {
+          "category": "Custom Properties",
+          "deprecated": false,
+          "designTime": false,
+          "experimental": false,
+          "hidden": false,
+          "key": "YjnCVu1B",
+          "name": "ManagerSupervisor",
+          "persisted": true,
+          "readonly": false,
+          "type": "String"
+        }
+      ],
+      "customQuery": "var results \u003d [];\nvar resultsPreps \u003d [];\nvar resultsPreps2 \u003d [];\nvar div \u003d 0;\nvar bqValue \u003d 0;\n\nif (query.parameters.Kpi !\u003d\u003d null \u0026\u0026 query.parameters.IsBqPerf \u003d\u003d\u003d true){\n  \n      if(query.parameters.IsBySup \u003d\u003d\u003d true){\n      \n        query.filters.relAgents.relSupervisors.Name._equals \u003d query.parameters.Supervisor;\n      }\n      else{}\n  \n      if(query.parameters.ManagerSupervisor !\u003d\u003d null){\n      \n        query.filters.relAgents.relSupervisors.Name._equals \u003d query.parameters.ManagerSupervisor;\n      \n      }\n      else{}\n  \n      query.filters.Date._greaterThanOrEquals \u003d query.parameters.FirstDate;\n      query.filters.Date._lessThanOrEquals \u003d query.parameters.EndDate;\n      query.filters.KPI._equals \u003d query.parameters.Kpi;\n  \n      //results \u003d query.run();\n  \n      // UNDER TARGET QUERY STARTS HERE\n      \n      var uKpi \u003d query.parameters.Kpi;\n      var threshold;\n  \n      switch(uKpi){\n          \n        case \u0027CSAT\u0027:\n          threshold \u003d 95;\n          break;\n        case \u0027CCA\u0027:\n          threshold \u003d 90;\n          break;\n        case \u0027QA\u0027:\n          threshold \u003d 90;\n          break;\n         case \u0027PPH\u0027:\n          threshold \u003d 0.9;\n      }\n          \n      /*\n      div \u003d Math.round(results.length / 4);\n      if(div \u003c 0.5){\n        bqValue \u003d results[0].Score;  \n      }\n      else{\n        bqValue \u003d results[div-1].Score;\n      }      \n      \n      */\n  \n      console.log(uKpi);\n      console.log(threshold);\n    \n      query.filters.Score._lessThan \u003d threshold;\n  \n      results \u003d query.run();\n  \n      console.log(\"START1\");\n\n  \n      return results;\n  \n      // UNDER TARGET QUERY ENDS HERE\n\n    }\n\nelse{\n\n  if (query.parameters.Kpi !\u003d\u003d null){\n    \n      if(query.parameters.IsBySup \u003d\u003d\u003d true){\n      \n        query.filters.relAgents.relSupervisors.Name._equals \u003d query.parameters.Supervisor;\n      \n      }\n      else{}\n    \n    if(query.parameters.ManagerSupervisor !\u003d\u003d null){\n      \n        query.filters.relAgents.relSupervisors.Name._equals \u003d query.parameters.ManagerSupervisor;\n      \n      }\n      else{}\n    \n      \n      query.filters.Date._greaterThanOrEquals \u003d query.parameters.FirstDate;\n      query.filters.Date._lessThanOrEquals \u003d query.parameters.EndDate;\n      query.filters.KPI._equals \u003d query.parameters.Kpi;\n      \n      resultsPreps \u003d query.run();\n    \n      console.log(\"START2\");\n      console.log(query.parameters.ManagerSupervisor);\n    \n      return resultsPreps;\n  }\n  \n  else{\n  \n       if(query.parameters.IsBySup \u003d\u003d\u003d true){\n      \n        query.filters.relAgents.relSupervisors.Name._equals \u003d query.parameters.Supervisor;\n      \n      }\n      else{}\n    \n    \n    if(query.parameters.ManagerSupervisor !\u003d\u003d null){\n      \n        query.filters.relAgents.relSupervisors.Name._equals \u003d query.parameters.ManagerSupervisor;\n      \n      }\n      else{}\n    \n  query.filters.Date._greaterThanOrEquals \u003d query.parameters.FirstDate;\n  query.filters.Date._lessThanOrEquals \u003d query.parameters.EndDate;\n  \n  resultsPreps2 \u003d query.run();\n    \n    console.log(\"START3\");\n  return resultsPreps2;\n  \n  }\n  \n  \n}",
+      "key": "NciviKiOhwAjKgDIzuNsDsU1gWHFow34",
+      "modelKey": "mbCFFZ4bH8AGYvbktZhIzTELfEHJ2Mtw",
+      "name": "Preps",
+      "pageSize": 100,
+      "type": "QUERY"
+    },
+    {
+      "customProperties": [
+        {
+          "category": "Custom Properties",
+          "deprecated": false,
+          "designTime": false,
+          "experimental": false,
+          "hidden": false,
+          "key": "SXQn4x3m",
+          "name": "Kpi",
+          "persisted": true,
+          "readonly": false,
+          "type": "String"
+        },
+        {
+          "category": "Custom Properties",
+          "deprecated": false,
+          "designTime": false,
+          "experimental": false,
+          "hidden": false,
+          "key": "XolJZZMu",
+          "name": "FirstDate",
+          "persisted": true,
+          "readonly": false,
+          "sqlType": "DATETIME",
+          "type": "Date"
+        },
+        {
+          "category": "Custom Properties",
+          "deprecated": false,
+          "designTime": false,
+          "experimental": false,
+          "hidden": false,
+          "key": "PcaYcHKN",
+          "name": "EndDate",
+          "persisted": true,
+          "readonly": false,
+          "sqlType": "DATETIME",
+          "type": "Date"
+        },
+        {
+          "category": "Custom Properties",
+          "deprecated": false,
+          "designTime": false,
+          "experimental": false,
+          "hidden": false,
+          "key": "ItHHbLKq",
+          "name": "Agent",
+          "persisted": true,
+          "readonly": false,
+          "type": "String"
+        }
+      ],
+      "customQuery": "/* Before changes\n\nvar resultPrepsByKpi \u003d [];\nquery.filters.Date._greaterThanOrEquals \u003d query.parameters.FirstDate;\nquery.filters.Date._lessThanOrEquals \u003d query.parameters.EndDate;\nquery.filters.KPI._equals \u003d query.parameters.Kpi;\nquery.filters.relAgents.Name._equals \u003d query.parameters.Agent;\nquery.sorting.Date._ascending();\nresultPrepsByKpi \u003d query.run();\nreturn resultPrepsByKpi;\n\n*/\n\nvar resultPrepsByKpi \u003d [];\nquery.filters.Date._greaterThanOrEquals \u003d query.parameters.FirstDate;\nquery.filters.Date._lessThanOrEquals \u003d query.parameters.EndDate;\nquery.filters.KPI._equals \u003d query.parameters.Kpi;\nquery.filters.relAgents.Name._equals \u003d query.parameters.Agent;\nquery.sorting.Date._ascending();\nresultPrepsByKpi \u003d query.run();\nreturn resultPrepsByKpi;",
+      "key": "Cggq5ka1sju2tCeyQoP1gXEmMtMQdUXF",
+      "modelKey": "mbCFFZ4bH8AGYvbktZhIzTELfEHJ2Mtw",
+      "name": "PrepsByKpi",
+      "pageSize": 100,
+      "type": "QUERY"
+    },
+    {
+      "customQuery": "var otherResults \u003d [];\nvar otherQuery \u003d app.models.Preps.newQuery().run();\notherResults \u003d otherQuery;\nreturn otherResults;",
+      "key": "MJ2UDZH9lCYNtoNwFT6YzC0jyoFtEDb1",
+      "modelKey": "mbCFFZ4bH8AGYvbktZhIzTELfEHJ2Mtw",
+      "name": "CopyOfDatasource",
+      "pageSize": 100,
+      "type": "QUERY",
+      "wherePathMappings": []
+    },
+    {
+      "key": "lCF34kS8Esvz3NysTBbaC5x1zNSrINCW",
+      "modelKey": "mbCFFZ4bH8AGYvbktZhIzTELfEHJ2Mtw",
+      "name": "AllPreps",
+      "pageSize": 100,
+      "type": "QUERY"
+    },
+    {
+      "customProperties": [
+        {
+          "category": "Custom Properties",
+          "deprecated": false,
+          "designTime": false,
+          "experimental": false,
+          "hidden": false,
+          "key": "nugGZPan",
+          "name": "Username",
+          "persisted": true,
+          "readonly": false,
+          "type": "String"
+        },
+        {
+          "category": "Custom Properties",
+          "deprecated": false,
+          "designTime": false,
+          "experimental": false,
+          "hidden": false,
+          "key": "ahXjpJuX",
+          "name": "IsBySup",
+          "persisted": true,
+          "readonly": false,
+          "type": "Boolean"
+        }
+      ],
+      "customQuery": "query.parameters.IsBySup \u003d false;\n\nif(query.parameters.IsBySup \u003d\u003d\u003d true)\n{\n\nvar results \u003d [];\nquery.filters.relAgents.relSupervisors.Username._equals \u003d query.parameters.Username;\nquery.sorting.Date._descending();\nresults \u003d query.run();\nreturn results;\n  \n}\nelse{\n\n  var results \u003d [];\n  query.sorting.Date._descending();\n  results \u003d query.run();\n  return results;\n\n\n}",
+      "key": "Xn0M51TNvojEQgrdiAuZDKANFeQmpfxF",
+      "modelKey": "mbCFFZ4bH8AGYvbktZhIzTELfEHJ2Mtw",
+      "name": "PrepsBySup",
+      "pageSize": 100,
+      "type": "QUERY"
+    },
+    {
+      "customProperties": [{
+        "category": "Custom Properties",
+        "deprecated": false,
+        "designTime": false,
+        "experimental": false,
+        "hidden": false,
+        "key": "E035qKJA",
+        "name": "PrepKey",
+        "persisted": true,
+        "readonly": false,
+        "type": "String"
+      }],
+      "customQuery": "var result \u003d [];\nquery.filters._key._equals \u003d query.parameters.PrepKey;\nresult \u003d query.run();\nreturn result;",
+      "key": "iUr4VsB6mJpWN79LzEF2JZqEhIpHX75Q",
+      "modelKey": "mbCFFZ4bH8AGYvbktZhIzTELfEHJ2Mtw",
+      "name": "LastPrep",
+      "pageSize": 100,
+      "type": "QUERY"
+    },
+    {
+      "customProperties": [{
+        "category": "Custom Properties",
+        "deprecated": false,
+        "designTime": false,
+        "experimental": false,
+        "hidden": false,
+        "key": "GEDEtRFR",
+        "name": "Username",
+        "persisted": true,
+        "readonly": false,
+        "type": "String"
+      }],
+      "customQuery": "var results \u003d [];\nquery.filters.relAgents.relSupervisors.Username._equals \u003d query.parameters.Username;\nquery.sorting.Timestamp._descending();\nresults \u003d query.run();\nreturn results;",
+      "key": "FcvfpBdzmvEVfuzvHjAcUrNaqKjHKEmy",
+      "modelKey": "mbCFFZ4bH8AGYvbktZhIzTELfEHJ2Mtw",
+      "name": "PrepsByTimestamp",
+      "pageSize": 100,
+      "type": "QUERY"
+    },
+    {
+      "customQuery": "var results \u003d [];\nvar myQuery \u003d app.models.Supervisors.newQuery();\nresults \u003d myQuery.run();\nreturn results;\n",
+      "key": "Ot7iBQSIaAvsx9ZzyvjbYFD39TL65ivP",
+      "modelKey": "mbCFFZ4bH8AGYvbktZhIzTELfEHJ2Mtw",
+      "name": "PrepsByAgentByKpi",
+      "pageSize": 100,
+      "type": "QUERY"
+    },
+    {
+      "customProperties": [
+        {
+          "category": "Custom Properties",
+          "deprecated": false,
+          "designTime": false,
+          "experimental": false,
+          "hidden": false,
+          "key": "WcP5gL3H",
+          "name": "FirstDate",
+          "persisted": true,
+          "readonly": false,
+          "sqlType": "DATETIME",
+          "type": "Date"
+        },
+        {
+          "category": "Custom Properties",
+          "deprecated": false,
+          "designTime": false,
+          "experimental": false,
+          "hidden": false,
+          "key": "XdEOHGi8",
+          "name": "EndDate",
+          "persisted": true,
+          "readonly": false,
+          "sqlType": "DATETIME",
+          "type": "Date"
+        },
+        {
+          "category": "Custom Properties",
+          "deprecated": false,
+          "designTime": false,
+          "experimental": false,
+          "hidden": false,
+          "key": "3KjuWnov",
+          "name": "Kpi",
+          "persisted": true,
+          "readonly": false,
+          "type": "String"
+        },
+        {
+          "category": "Custom Properties",
+          "deprecated": false,
+          "designTime": false,
+          "experimental": false,
+          "hidden": false,
+          "key": "ZcMPSNYb",
+          "name": "IsBqPerf",
+          "persisted": true,
+          "readonly": false,
+          "type": "Boolean"
+        },
+        {
+          "category": "Custom Properties",
+          "deprecated": false,
+          "designTime": false,
+          "experimental": false,
+          "hidden": false,
+          "key": "aHK940nY",
+          "name": "AgentName",
+          "persisted": true,
+          "readonly": false,
+          "type": "String"
+        }
+      ],
+      "customQuery": "var results \u003d [];\nvar resultsPreps \u003d [];\nvar resultsPreps2 \u003d [];\nvar div \u003d 0;\nvar bqValue \u003d 0;\n\n\n\nif (query.parameters.Kpi !\u003d\u003d null \u0026\u0026 query.parameters.IsBqPerf \u003d\u003d\u003d true){\n  \n      \n  \n      query.filters.Date._greaterThanOrEquals \u003d query.parameters.FirstDate;\n      query.filters.Date._lessThanOrEquals \u003d query.parameters.EndDate;\n      query.filters.KPI._equals \u003d query.parameters.Kpi;\n  \n      if(query.parameters.AgentName !\u003d\u003d null){\n        query.filters.relAgents.Name._equals \u003d query.parameters.AgentName;\n      }\n  \n      query.sorting.Score._ascending();\n  \n      results \u003d query.run();\n      \n      div \u003d Math.round(results.length / 4);\n      if(div \u003c 0.5){\n        bqValue \u003d results[0].Score;  \n      }\n      else{\n        bqValue \u003d results[div-1].Score;\n      }      \n  \n      console.log(bqValue);\n      console.log(div);\n    \n      query.filters.Score._lessThanOrEquals \u003d bqValue;\n  \n      results \u003d query.run();\n  \n      return results;\n\n    }\n\nelse{\n\n  if (query.parameters.Kpi !\u003d\u003d null){\n  \n      query.filters.Date._greaterThanOrEquals \u003d query.parameters.FirstDate;\n      query.filters.Date._lessThanOrEquals \u003d query.parameters.EndDate;\n      query.filters.KPI._equals \u003d query.parameters.Kpi;\n    \n      if(query.parameters.AgentName !\u003d\u003d null){\n         query.filters.relAgents.Name._equals \u003d query.parameters.AgentName;\n      }\n    \n      query.sorting.Date._ascending();\n      resultsPreps \u003d query.run();\n      return resultsPreps;\n  }\n  \n  else{\n  \n  \n  query.filters.Date._greaterThanOrEquals \u003d query.parameters.FirstDate;\n  query.filters.Date._lessThanOrEquals \u003d query.parameters.EndDate;\n  query.filters.relAgents.Name._equals \u003d query.parameters.AgentName;\n  query.sorting.Date._ascending();\n  resultsPreps2 \u003d query.run();\n  return resultsPreps2;\n  \n  }\n    \n}",
+      "key": "HPnA9vCnr0XMk3LDbg67kPn8f4epgG2v",
+      "modelKey": "mbCFFZ4bH8AGYvbktZhIzTELfEHJ2Mtw",
+      "name": "PrepsByDate",
+      "pageSize": 100,
+      "type": "QUERY"
+    },
+    {
+      "customQuery": "var results \u003d [];\nquery.filters.SubmittedBy._equals \u003d \"gabriel.garoz\";\nresults \u003d query.run();\nreturn results;",
+      "key": "NRdmYSSUxXErxncfgSiIwQ8l1YrhhxKf",
+      "modelKey": "mbCFFZ4bH8AGYvbktZhIzTELfEHJ2Mtw",
+      "name": "PrepsCount",
+      "pageSize": 100,
+      "type": "QUERY",
+      "wherePathMappings": []
+    }
+  ],
+  "defaultDataSourceKey": "mbCFFZ4bH8AGYvbktZhIzTELfEHJ2Mtw_default",
+  "displayNameField": "g7xbFb5RR7SAVqxV",
+  "eventPermissions": [
+    {
+      "name": "ON_CREATE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_LOAD",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_SAVE",
+      "type": "inherited"
+    },
+    {
+      "name": "ON_DELETE",
+      "type": "inherited"
+    }
+  ],
+  "events": [],
+  "fields": [
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "KPI",
+      "key": "g7xbFb5RR7SAVqxV",
+      "minLength": 0,
+      "name": "KPI",
+      "possibleValues": {
+        "list": [
+          "CSAT",
+          "QA",
+          "PPH",
+          "CCA",
+          "Dashboard completion",
+          "Scrubbings completion",
+          "CCA Reviewers"
+        ],
+        "type": "List[String]"
+      },
+      "required": false,
+      "type": "String"
+    },
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "Wins",
+      "key": "bOse8xkPf2NqcBBw",
+      "minLength": 0,
+      "name": "Wins",
+      "required": false,
+      "type": "String"
+    },
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "EvenBetter",
+      "key": "l6VXy8Lu5UaFZ4rz",
+      "minLength": 0,
+      "name": "EvenBetter",
+      "required": false,
+      "type": "String"
+    },
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "ActionPlan",
+      "key": "GzOg018giwn7MSpb",
+      "minLength": 0,
+      "name": "ActionPlan",
+      "required": false,
+      "type": "String"
+    },
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "Date",
+      "key": "ivPsBJP09jITKt6p",
+      "name": "Date",
+      "required": false,
+      "type": "Date"
+    },
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "Timestamp",
+      "key": "I4KpK1PS9VZLPaVV",
+      "minLength": 0,
+      "name": "Timestamp",
+      "required": false,
+      "type": "String"
+    },
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "Score",
+      "integer": false,
+      "key": "OQasin9EIx7Ahn5s",
+      "name": "Score",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "SubmittedBy",
+      "key": "8ZUh6SoSUoMiq42N",
+      "minLength": 0,
+      "name": "SubmittedBy",
+      "required": false,
+      "type": "String"
+    }
+  ],
+  "key": "mbCFFZ4bH8AGYvbktZhIzTELfEHJ2Mtw",
+  "modelPermission": {
+    "name": "model permission",
+    "type": "compoundEveryone"
+  },
+  "name": "Preps",
+  "type": "BRIX",
+  "userIdFieldType": "USER_ID"
+}

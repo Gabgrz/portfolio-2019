@@ -1,0 +1,1572 @@
+{
+  "class": "Panel",
+  "customPropertyDescriptions": [{
+    "category": "Custom Properties",
+    "deprecated": false,
+    "designTime": false,
+    "experimental": false,
+    "hidden": false,
+    "key": "JEAkH7Jf",
+    "name": "CountBySup",
+    "persisted": true,
+    "readonly": false,
+    "type": "Number"
+  }],
+  "customPropertyValues": {
+    "name": "CustomProperties",
+    "properties": [{
+      "name": "JEAkH7Jf",
+      "value": {
+        "isNull": true,
+        "type": "Number"
+      }
+    }],
+    "type": "PropertyMap[CustomProperties]"
+  },
+  "key": "hwGW6XK7TpPEJOfhN1kVZhNaLja3NlrG",
+  "permission": {
+    "name": "canRead",
+    "type": "compoundEveryone"
+  },
+  "propList": [
+    {
+      "k": "styleMap",
+      "v": {
+        "name": "styleMap",
+        "properties": [],
+        "type": "PropertyMap[styleMap]"
+      }
+    },
+    {
+      "k": "width",
+      "v": 960
+    },
+    {
+      "k": "height",
+      "v": 960
+    },
+    {
+      "k": "name",
+      "v": "AnalyticsV2"
+    },
+    {
+      "k": "variant",
+      "v": "Background"
+    },
+    {
+      "k": "top",
+      "v": 4
+    },
+    {
+      "k": "left",
+      "v": 4
+    },
+    {
+      "k": "children",
+      "v": {
+        "list": [
+          {
+            "class": "SimpleLabel",
+            "key": "0_549471355",
+            "propList": [
+              {
+                "k": "styleMap",
+                "v": {
+                  "name": "styleMap",
+                  "properties": [],
+                  "type": "PropertyMap[styleMap]"
+                }
+              },
+              {
+                "k": "width",
+                "v": 100
+              },
+              {
+                "k": "height",
+                "v": 20
+              },
+              {
+                "k": "name",
+                "v": "Label1"
+              },
+              {
+                "k": "left",
+                "v": 21
+              },
+              {
+                "k": "top",
+                "v": 24
+              },
+              {
+                "k": "autoWidth",
+                "v": true
+              },
+              {
+                "k": "autoHeight",
+                "v": true
+              },
+              {
+                "k": "right",
+                "v": 839
+              },
+              {
+                "k": "bottom",
+                "v": 916
+              },
+              {
+                "k": "text",
+                "v": "Lookup by Supervisor"
+              }
+            ],
+            "type": "ComponentInfo"
+          },
+          {
+            "class": "Panel",
+            "key": "0_664208527",
+            "propList": [
+              {
+                "k": "styleMap",
+                "v": {
+                  "name": "styleMap",
+                  "properties": [],
+                  "type": "PropertyMap[styleMap]"
+                }
+              },
+              {
+                "k": "width",
+                "v": 406
+              },
+              {
+                "k": "height",
+                "v": 46
+              },
+              {
+                "k": "layout",
+                "v": "horizontal"
+              },
+              {
+                "k": "name",
+                "v": "Panel1"
+              },
+              {
+                "k": "left",
+                "v": 21
+              },
+              {
+                "k": "top",
+                "v": 89
+              },
+              {
+                "k": "right",
+                "v": 533
+              },
+              {
+                "k": "bottom",
+                "v": 825
+              },
+              {
+                "k": "children",
+                "v": {
+                  "list": [
+                    {
+                      "class": "Dropdown",
+                      "key": "0_1643837468",
+                      "propList": [
+                        {
+                          "k": "styleMap",
+                          "v": {
+                            "name": "styleMap",
+                            "properties": [],
+                            "type": "PropertyMap[styleMap]"
+                          }
+                        },
+                        {
+                          "k": "width",
+                          "v": 150
+                        },
+                        {
+                          "k": "height",
+                          "v": 32
+                        },
+                        {
+                          "k": "name",
+                          "v": "DropdownSupervisor"
+                        },
+                        {
+                          "k": "left",
+                          "v": 0
+                        },
+                        {
+                          "k": "top",
+                          "v": 0
+                        },
+                        {
+                          "k": "autoHeight",
+                          "v": true
+                        },
+                        {
+                          "k": "label",
+                          "v": "Supervisor"
+                        },
+                        {
+                          "k": "bindings",
+                          "v": {
+                            "list": [{
+                              "sourceExpression": "options",
+                              "targetExpression": "@datasources.YenDTCgkLdCAa8kodxP2wHBkxk2Ucqgi_default.items..Yml4JvQjGBLIoZoT",
+                              "targetLiteralExpression": "@datasources.Supervisors.items..Name",
+                              "type": "BindingInfo"
+                            }],
+                            "type": "List[BindingInfo]"
+                          }
+                        },
+                        {
+                          "k": "onValueEdit",
+                          "v": "countBySup();"
+                        }
+                      ],
+                      "type": "ComponentInfo"
+                    },
+                    {
+                      "class": "Dropdown",
+                      "key": "0_2079566638",
+                      "propList": [
+                        {
+                          "k": "styleMap",
+                          "v": {
+                            "name": "styleMap",
+                            "properties": [],
+                            "type": "PropertyMap[styleMap]"
+                          }
+                        },
+                        {
+                          "k": "width",
+                          "v": 150
+                        },
+                        {
+                          "k": "height",
+                          "v": 33
+                        },
+                        {
+                          "k": "name",
+                          "v": "DropdownMonth"
+                        },
+                        {
+                          "k": "left",
+                          "v": 0
+                        },
+                        {
+                          "k": "top",
+                          "v": 0
+                        },
+                        {
+                          "k": "autoHeight",
+                          "v": true
+                        },
+                        {
+                          "k": "constrain_left",
+                          "v": true
+                        },
+                        {
+                          "k": "constrain_right",
+                          "v": false
+                        },
+                        {
+                          "k": "constrain_width",
+                          "v": true
+                        },
+                        {
+                          "k": "constrain_minWidth",
+                          "v": false
+                        },
+                        {
+                          "k": "constrain_maxWidth",
+                          "v": false
+                        },
+                        {
+                          "k": "constrain_top",
+                          "v": true
+                        },
+                        {
+                          "k": "constrain_bottom",
+                          "v": false
+                        },
+                        {
+                          "k": "constrain_height",
+                          "v": true
+                        },
+                        {
+                          "k": "constrain_minHeight",
+                          "v": false
+                        },
+                        {
+                          "k": "constrain_maxHeight",
+                          "v": false
+                        },
+                        {
+                          "k": "label",
+                          "v": "Month"
+                        },
+                        {
+                          "k": "bindings",
+                          "v": {
+                            "list": [{
+                              "sourceExpression": "options",
+                              "targetExpression": "[\u0027January\u0027,\u0027February\u0027,\u0027March\u0027,\u0027April\u0027,\u0027May\u0027,\u0027June\u0027,\u0027July\u0027,\u0027August\u0027,\u0027September\u0027,\u0027October\u0027,\u0027November\u0027,\u0027December\u0027]",
+                              "targetLiteralExpression": "[\u0027January\u0027,\u0027February\u0027,\u0027March\u0027,\u0027April\u0027,\u0027May\u0027,\u0027June\u0027,\u0027July\u0027,\u0027August\u0027,\u0027September\u0027,\u0027October\u0027,\u0027November\u0027,\u0027December\u0027]",
+                              "type": "BindingInfo"
+                            }],
+                            "type": "List[BindingInfo]"
+                          }
+                        }
+                      ],
+                      "type": "ComponentInfo"
+                    }
+                  ],
+                  "type": "List[ComponentInfo]"
+                }
+              }
+            ],
+            "type": "ComponentInfo"
+          },
+          {
+            "class": "Panel",
+            "key": "0_5696257",
+            "propList": [
+              {
+                "k": "styleMap",
+                "v": {
+                  "name": "styleMap",
+                  "properties": [],
+                  "type": "PropertyMap[styleMap]"
+                }
+              },
+              {
+                "k": "width",
+                "v": 406
+              },
+              {
+                "k": "height",
+                "v": 90
+              },
+              {
+                "k": "layout",
+                "v": "vertical"
+              },
+              {
+                "k": "name",
+                "v": "Panel2"
+              },
+              {
+                "k": "left",
+                "v": 21
+              },
+              {
+                "k": "top",
+                "v": 153
+              },
+              {
+                "k": "right",
+                "v": 533
+              },
+              {
+                "k": "bottom",
+                "v": 717
+              },
+              {
+                "k": "children",
+                "v": {
+                  "list": [
+                    {
+                      "class": "Panel",
+                      "key": "0_998235031",
+                      "propList": [
+                        {
+                          "k": "styleMap",
+                          "v": {
+                            "name": "styleMap",
+                            "properties": [],
+                            "type": "PropertyMap[styleMap]"
+                          }
+                        },
+                        {
+                          "k": "width",
+                          "v": 400
+                        },
+                        {
+                          "k": "height",
+                          "v": 200
+                        },
+                        {
+                          "k": "layout",
+                          "v": "horizontal"
+                        },
+                        {
+                          "k": "name",
+                          "v": "Panel4"
+                        },
+                        {
+                          "k": "left",
+                          "v": 0
+                        },
+                        {
+                          "k": "top",
+                          "v": 0
+                        },
+                        {
+                          "k": "autoWidth",
+                          "v": true
+                        },
+                        {
+                          "k": "align",
+                          "v": "stretch"
+                        },
+                        {
+                          "k": "autoHeight",
+                          "v": true
+                        },
+                        {
+                          "k": "children",
+                          "v": {
+                            "list": [{
+                              "class": "SimpleLabel",
+                              "key": "0_1381309457",
+                              "propList": [
+                                {
+                                  "k": "styleMap",
+                                  "v": {
+                                    "name": "styleMap",
+                                    "properties": [],
+                                    "type": "PropertyMap[styleMap]"
+                                  }
+                                },
+                                {
+                                  "k": "width",
+                                  "v": 100
+                                },
+                                {
+                                  "k": "height",
+                                  "v": 20
+                                },
+                                {
+                                  "k": "name",
+                                  "v": "Label2"
+                                },
+                                {
+                                  "k": "left",
+                                  "v": 0
+                                },
+                                {
+                                  "k": "top",
+                                  "v": 0
+                                },
+                                {
+                                  "k": "autoWidth",
+                                  "v": true
+                                },
+                                {
+                                  "k": "autoHeight",
+                                  "v": true
+                                },
+                                {
+                                  "k": "right",
+                                  "v": 0
+                                },
+                                {
+                                  "k": "bottom",
+                                  "v": 0
+                                },
+                                {
+                                  "k": "text",
+                                  "v": "Preps submitted - Monthly"
+                                },
+                                {
+                                  "k": "grow",
+                                  "v": 0
+                                }
+                              ],
+                              "type": "ComponentInfo"
+                            }],
+                            "type": "List[ComponentInfo]"
+                          }
+                        },
+                        {
+                          "k": "justify",
+                          "v": "center"
+                        },
+                        {
+                          "k": "grow",
+                          "v": 0
+                        }
+                      ],
+                      "type": "ComponentInfo"
+                    },
+                    {
+                      "class": "Panel",
+                      "key": "0_216105273",
+                      "propList": [
+                        {
+                          "k": "styleMap",
+                          "v": {
+                            "name": "styleMap",
+                            "properties": [],
+                            "type": "PropertyMap[styleMap]"
+                          }
+                        },
+                        {
+                          "k": "width",
+                          "v": 400
+                        },
+                        {
+                          "k": "height",
+                          "v": 200
+                        },
+                        {
+                          "k": "layout",
+                          "v": "horizontal"
+                        },
+                        {
+                          "k": "name",
+                          "v": "Panel3"
+                        },
+                        {
+                          "k": "left",
+                          "v": 0
+                        },
+                        {
+                          "k": "top",
+                          "v": 0
+                        },
+                        {
+                          "k": "autoWidth",
+                          "v": true
+                        },
+                        {
+                          "k": "align",
+                          "v": "stretch"
+                        },
+                        {
+                          "k": "autoHeight",
+                          "v": true
+                        },
+                        {
+                          "k": "children",
+                          "v": {
+                            "list": [
+                              {
+                                "class": "SimpleLabel",
+                                "key": "0_1213025555",
+                                "propList": [
+                                  {
+                                    "k": "styleMap",
+                                    "v": {
+                                      "name": "styleMap",
+                                      "properties": [],
+                                      "type": "PropertyMap[styleMap]"
+                                    }
+                                  },
+                                  {
+                                    "k": "width",
+                                    "v": 100
+                                  },
+                                  {
+                                    "k": "height",
+                                    "v": 20
+                                  },
+                                  {
+                                    "k": "name",
+                                    "v": "Label3"
+                                  },
+                                  {
+                                    "k": "left",
+                                    "v": 0
+                                  },
+                                  {
+                                    "k": "top",
+                                    "v": 0
+                                  },
+                                  {
+                                    "k": "autoWidth",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "autoHeight",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "text",
+                                    "v": "TOTAL"
+                                  }
+                                ],
+                                "type": "ComponentInfo"
+                              },
+                              {
+                                "class": "SimpleLabel",
+                                "key": "1_211391004",
+                                "propList": [
+                                  {
+                                    "k": "styleMap",
+                                    "v": {
+                                      "name": "styleMap",
+                                      "properties": [],
+                                      "type": "PropertyMap[styleMap]"
+                                    }
+                                  },
+                                  {
+                                    "k": "width",
+                                    "v": 39
+                                  },
+                                  {
+                                    "k": "height",
+                                    "v": 15
+                                  },
+                                  {
+                                    "k": "name",
+                                    "v": "Label4"
+                                  },
+                                  {
+                                    "k": "left",
+                                    "v": 0
+                                  },
+                                  {
+                                    "k": "top",
+                                    "v": 0
+                                  },
+                                  {
+                                    "k": "autoWidth",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "autoHeight",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "text",
+                                    "v": "Week 1"
+                                  },
+                                  {
+                                    "k": "constrain_left",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_right",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_width",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_minWidth",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_maxWidth",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_top",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_bottom",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_height",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_minHeight",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_maxHeight",
+                                    "v": false
+                                  }
+                                ],
+                                "type": "ComponentInfo"
+                              },
+                              {
+                                "class": "SimpleLabel",
+                                "key": "2_9123782",
+                                "propList": [
+                                  {
+                                    "k": "styleMap",
+                                    "v": {
+                                      "name": "styleMap",
+                                      "properties": [],
+                                      "type": "PropertyMap[styleMap]"
+                                    }
+                                  },
+                                  {
+                                    "k": "width",
+                                    "v": 39
+                                  },
+                                  {
+                                    "k": "height",
+                                    "v": 15
+                                  },
+                                  {
+                                    "k": "name",
+                                    "v": "Label5"
+                                  },
+                                  {
+                                    "k": "left",
+                                    "v": 0
+                                  },
+                                  {
+                                    "k": "top",
+                                    "v": 0
+                                  },
+                                  {
+                                    "k": "autoWidth",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "autoHeight",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "text",
+                                    "v": "Week 2"
+                                  },
+                                  {
+                                    "k": "constrain_left",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_right",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_width",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_minWidth",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_maxWidth",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_top",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_bottom",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_height",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_minHeight",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_maxHeight",
+                                    "v": false
+                                  }
+                                ],
+                                "type": "ComponentInfo"
+                              },
+                              {
+                                "class": "SimpleLabel",
+                                "key": "3_70047329",
+                                "propList": [
+                                  {
+                                    "k": "styleMap",
+                                    "v": {
+                                      "name": "styleMap",
+                                      "properties": [],
+                                      "type": "PropertyMap[styleMap]"
+                                    }
+                                  },
+                                  {
+                                    "k": "width",
+                                    "v": 39
+                                  },
+                                  {
+                                    "k": "height",
+                                    "v": 15
+                                  },
+                                  {
+                                    "k": "name",
+                                    "v": "Label6"
+                                  },
+                                  {
+                                    "k": "left",
+                                    "v": 0
+                                  },
+                                  {
+                                    "k": "top",
+                                    "v": 0
+                                  },
+                                  {
+                                    "k": "autoWidth",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "autoHeight",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "text",
+                                    "v": "Week 3"
+                                  },
+                                  {
+                                    "k": "constrain_left",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_right",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_width",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_minWidth",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_maxWidth",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_top",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_bottom",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_height",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_minHeight",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_maxHeight",
+                                    "v": false
+                                  }
+                                ],
+                                "type": "ComponentInfo"
+                              },
+                              {
+                                "class": "SimpleLabel",
+                                "key": "4_105918943",
+                                "propList": [
+                                  {
+                                    "k": "styleMap",
+                                    "v": {
+                                      "name": "styleMap",
+                                      "properties": [],
+                                      "type": "PropertyMap[styleMap]"
+                                    }
+                                  },
+                                  {
+                                    "k": "width",
+                                    "v": 39
+                                  },
+                                  {
+                                    "k": "height",
+                                    "v": 15
+                                  },
+                                  {
+                                    "k": "name",
+                                    "v": "Label7"
+                                  },
+                                  {
+                                    "k": "left",
+                                    "v": 0
+                                  },
+                                  {
+                                    "k": "top",
+                                    "v": 0
+                                  },
+                                  {
+                                    "k": "autoWidth",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "autoHeight",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "text",
+                                    "v": "Week 4"
+                                  },
+                                  {
+                                    "k": "constrain_left",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_right",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_width",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_minWidth",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_maxWidth",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_top",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_bottom",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_height",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_minHeight",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_maxHeight",
+                                    "v": false
+                                  }
+                                ],
+                                "type": "ComponentInfo"
+                              }
+                            ],
+                            "type": "List[ComponentInfo]"
+                          }
+                        },
+                        {
+                          "k": "justify",
+                          "v": "spaceAround"
+                        }
+                      ],
+                      "type": "ComponentInfo"
+                    },
+                    {
+                      "class": "Panel",
+                      "key": "6_265306573",
+                      "propList": [
+                        {
+                          "k": "styleMap",
+                          "v": {
+                            "name": "styleMap",
+                            "properties": [],
+                            "type": "PropertyMap[styleMap]"
+                          }
+                        },
+                        {
+                          "k": "width",
+                          "v": 406
+                        },
+                        {
+                          "k": "height",
+                          "v": 15
+                        },
+                        {
+                          "k": "layout",
+                          "v": "horizontal"
+                        },
+                        {
+                          "k": "name",
+                          "v": "Panel5"
+                        },
+                        {
+                          "k": "left",
+                          "v": 0
+                        },
+                        {
+                          "k": "top",
+                          "v": 0
+                        },
+                        {
+                          "k": "autoWidth",
+                          "v": true
+                        },
+                        {
+                          "k": "align",
+                          "v": "stretch"
+                        },
+                        {
+                          "k": "autoHeight",
+                          "v": true
+                        },
+                        {
+                          "k": "children",
+                          "v": {
+                            "list": [
+                              {
+                                "class": "TextField",
+                                "key": "0_242260982",
+                                "propList": [
+                                  {
+                                    "k": "styleMap",
+                                    "v": {
+                                      "name": "styleMap",
+                                      "properties": [],
+                                      "type": "PropertyMap[styleMap]"
+                                    }
+                                  },
+                                  {
+                                    "k": "width",
+                                    "v": 100
+                                  },
+                                  {
+                                    "k": "height",
+                                    "v": 32
+                                  },
+                                  {
+                                    "k": "name",
+                                    "v": "TextBox1"
+                                  },
+                                  {
+                                    "k": "left",
+                                    "v": 0
+                                  },
+                                  {
+                                    "k": "top",
+                                    "v": 0
+                                  },
+                                  {
+                                    "k": "autoHeight",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "autoWidth",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "grow",
+                                    "v": 1
+                                  },
+                                  {
+                                    "k": "value",
+                                    "v": "total"
+                                  },
+                                  {
+                                    "k": "bindings",
+                                    "v": {
+                                      "list": [{
+                                        "sourceExpression": "value",
+                                        "targetExpression": "@properties.JEAkH7Jf",
+                                        "targetLiteralExpression": "@properties.CountBySup",
+                                        "type": "BindingInfo"
+                                      }],
+                                      "type": "List[BindingInfo]"
+                                    }
+                                  }
+                                ],
+                                "type": "ComponentInfo"
+                              },
+                              {
+                                "class": "TextField",
+                                "key": "13_1956511677",
+                                "propList": [
+                                  {
+                                    "k": "styleMap",
+                                    "v": {
+                                      "name": "styleMap",
+                                      "properties": [],
+                                      "type": "PropertyMap[styleMap]"
+                                    }
+                                  },
+                                  {
+                                    "k": "width",
+                                    "v": 198
+                                  },
+                                  {
+                                    "k": "height",
+                                    "v": 33
+                                  },
+                                  {
+                                    "k": "name",
+                                    "v": "TextBox2"
+                                  },
+                                  {
+                                    "k": "left",
+                                    "v": 0
+                                  },
+                                  {
+                                    "k": "top",
+                                    "v": 0
+                                  },
+                                  {
+                                    "k": "autoHeight",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "autoWidth",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "grow",
+                                    "v": 1
+                                  },
+                                  {
+                                    "k": "constrain_left",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_right",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_width",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_minWidth",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_maxWidth",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_top",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_bottom",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_height",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_minHeight",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_maxHeight",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "value",
+                                    "v": "w1"
+                                  }
+                                ],
+                                "type": "ComponentInfo"
+                              },
+                              {
+                                "class": "TextField",
+                                "key": "14_1339559908",
+                                "propList": [
+                                  {
+                                    "k": "styleMap",
+                                    "v": {
+                                      "name": "styleMap",
+                                      "properties": [],
+                                      "type": "PropertyMap[styleMap]"
+                                    }
+                                  },
+                                  {
+                                    "k": "width",
+                                    "v": 198
+                                  },
+                                  {
+                                    "k": "height",
+                                    "v": 33
+                                  },
+                                  {
+                                    "k": "name",
+                                    "v": "TextBox3"
+                                  },
+                                  {
+                                    "k": "left",
+                                    "v": 0
+                                  },
+                                  {
+                                    "k": "top",
+                                    "v": 0
+                                  },
+                                  {
+                                    "k": "autoHeight",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "autoWidth",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "grow",
+                                    "v": 1
+                                  },
+                                  {
+                                    "k": "constrain_left",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_right",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_width",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_minWidth",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_maxWidth",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_top",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_bottom",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_height",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_minHeight",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_maxHeight",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "value",
+                                    "v": "w2"
+                                  }
+                                ],
+                                "type": "ComponentInfo"
+                              },
+                              {
+                                "class": "TextField",
+                                "key": "15_1710102640",
+                                "propList": [
+                                  {
+                                    "k": "styleMap",
+                                    "v": {
+                                      "name": "styleMap",
+                                      "properties": [],
+                                      "type": "PropertyMap[styleMap]"
+                                    }
+                                  },
+                                  {
+                                    "k": "width",
+                                    "v": 198
+                                  },
+                                  {
+                                    "k": "height",
+                                    "v": 33
+                                  },
+                                  {
+                                    "k": "name",
+                                    "v": "TextBox4"
+                                  },
+                                  {
+                                    "k": "left",
+                                    "v": 0
+                                  },
+                                  {
+                                    "k": "top",
+                                    "v": 0
+                                  },
+                                  {
+                                    "k": "autoHeight",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "autoWidth",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "grow",
+                                    "v": 1
+                                  },
+                                  {
+                                    "k": "constrain_left",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_right",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_width",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_minWidth",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_maxWidth",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_top",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_bottom",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_height",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_minHeight",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_maxHeight",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "value",
+                                    "v": "w3"
+                                  }
+                                ],
+                                "type": "ComponentInfo"
+                              },
+                              {
+                                "class": "TextField",
+                                "key": "16_487097491",
+                                "propList": [
+                                  {
+                                    "k": "styleMap",
+                                    "v": {
+                                      "name": "styleMap",
+                                      "properties": [],
+                                      "type": "PropertyMap[styleMap]"
+                                    }
+                                  },
+                                  {
+                                    "k": "width",
+                                    "v": 198
+                                  },
+                                  {
+                                    "k": "height",
+                                    "v": 33
+                                  },
+                                  {
+                                    "k": "name",
+                                    "v": "TextBox5"
+                                  },
+                                  {
+                                    "k": "left",
+                                    "v": 0
+                                  },
+                                  {
+                                    "k": "top",
+                                    "v": 0
+                                  },
+                                  {
+                                    "k": "autoHeight",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "autoWidth",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "grow",
+                                    "v": 1
+                                  },
+                                  {
+                                    "k": "constrain_left",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_right",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_width",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_minWidth",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_maxWidth",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_top",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_bottom",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_height",
+                                    "v": true
+                                  },
+                                  {
+                                    "k": "constrain_minHeight",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "constrain_maxHeight",
+                                    "v": false
+                                  },
+                                  {
+                                    "k": "value",
+                                    "v": "w4"
+                                  }
+                                ],
+                                "type": "ComponentInfo"
+                              }
+                            ],
+                            "type": "List[ComponentInfo]"
+                          }
+                        },
+                        {
+                          "k": "justify",
+                          "v": "spaceAround"
+                        },
+                        {
+                          "k": "constrain_left",
+                          "v": true
+                        },
+                        {
+                          "k": "constrain_right",
+                          "v": false
+                        },
+                        {
+                          "k": "constrain_width",
+                          "v": true
+                        },
+                        {
+                          "k": "constrain_minWidth",
+                          "v": false
+                        },
+                        {
+                          "k": "constrain_maxWidth",
+                          "v": false
+                        },
+                        {
+                          "k": "constrain_top",
+                          "v": true
+                        },
+                        {
+                          "k": "constrain_bottom",
+                          "v": false
+                        },
+                        {
+                          "k": "constrain_height",
+                          "v": true
+                        },
+                        {
+                          "k": "constrain_minHeight",
+                          "v": false
+                        },
+                        {
+                          "k": "constrain_maxHeight",
+                          "v": false
+                        }
+                      ],
+                      "type": "ComponentInfo"
+                    }
+                  ],
+                  "type": "List[ComponentInfo]"
+                }
+              },
+              {
+                "k": "justify",
+                "v": "center"
+              }
+            ],
+            "type": "ComponentInfo"
+          },
+          {
+            "class": "SimpleButton",
+            "key": "0_644768967",
+            "propList": [
+              {
+                "k": "styleMap",
+                "v": {
+                  "name": "styleMap",
+                  "properties": [],
+                  "type": "PropertyMap[styleMap]"
+                }
+              },
+              {
+                "k": "width",
+                "v": 92
+              },
+              {
+                "k": "height",
+                "v": 36
+              },
+              {
+                "k": "name",
+                "v": "Button1"
+              },
+              {
+                "k": "left",
+                "v": 458
+              },
+              {
+                "k": "top",
+                "v": 89
+              },
+              {
+                "k": "autoWidth",
+                "v": true
+              },
+              {
+                "k": "autoHeight",
+                "v": true
+              },
+              {
+                "k": "right",
+                "v": 410
+              },
+              {
+                "k": "bottom",
+                "v": 835
+              },
+              {
+                "k": "text",
+                "v": "Query"
+              },
+              {
+                "k": "action",
+                "v": "countBySup();"
+              }
+            ],
+            "type": "ComponentInfo"
+          }
+        ],
+        "type": "List[ComponentInfo]"
+      }
+    },
+    {
+      "k": "pageCss",
+      "v": ".app-AnalyticsV2-Label1 {\n  font-size: 36px;\n}\n"
+    }
+  ],
+  "type": "ComponentInfo"
+}

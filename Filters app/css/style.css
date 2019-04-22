@@ -1,0 +1,30 @@
+.hpanel{
+  width: 100% !important;
+  
+  text-align: center;
+  
+}
+
+
+h1,h2{
+
+  background-color: red;
+  padding: 10px;
+}
+
+body{background-color: lightblue;}
+
+canvas{
+  border: 3px solid;
+  width: 600px;
+  
+  
+}
+
+#mirror{
+  
+  font-size: 30px;
+  font-weight: bold;
+  background-color: blue;
+  padding: 10px;
+}

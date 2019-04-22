@@ -1,0 +1,210 @@
+{
+  "dataSources": [{
+    "key": "jogldCaErLnR8YiDbx2oBEt4sx4kWZKt_default",
+    "modelKey": "jogldCaErLnR8YiDbx2oBEt4sx4kWZKt",
+    "name": "CSATPrep",
+    "pageSize": 100,
+    "type": "QUERY"
+  }],
+  "defaultDataSourceKey": "jogldCaErLnR8YiDbx2oBEt4sx4kWZKt_default",
+  "eventPermissions": [
+    {
+      "name": "ON_CREATE",
+      "type": "compoundEveryone"
+    },
+    {
+      "name": "ON_LOAD",
+      "type": "compoundEveryone"
+    },
+    {
+      "name": "ON_SAVE",
+      "type": "compoundEveryone"
+    },
+    {
+      "name": "ON_DELETE",
+      "type": "compoundEveryone"
+    }
+  ],
+  "events": [],
+  "fields": [
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "NumCasesReviewed",
+      "displayName": "# Of Cases Reviewed",
+      "integer": false,
+      "key": "fuMXP1I8nMw5yeDO",
+      "name": "NumCasesReviewed",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "CasesReviewed",
+      "displayName": "Cases Reviewed (link)",
+      "key": "gdy74jGfylofE8Ap",
+      "minLength": 0,
+      "name": "CasesReviewed",
+      "required": false,
+      "type": "String"
+    },
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "ResponseRate",
+      "integer": false,
+      "key": "ezPcXZO9Jmp3R3HC",
+      "name": "ResponseRate",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "CaseAgeAvg",
+      "integer": false,
+      "key": "TRQugNeHHhbahJdV",
+      "name": "CaseAgeAvg",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "Comment",
+      "key": "pgFqLgy7bY37q7Cm",
+      "minLength": 0,
+      "name": "Comment",
+      "required": false,
+      "type": "String"
+    },
+    {
+      "allowedFilterOperators": [
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notIn"
+      ],
+      "columnName": "Score",
+      "integer": false,
+      "key": "pWA9YpKXaA9J2cQF",
+      "name": "Score",
+      "required": false,
+      "type": "Number"
+    },
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "ResponseSla",
+      "displayName": "Response SLA",
+      "key": "7k3rD2WBwydHoGlf",
+      "minLength": 0,
+      "name": "ResponseSla",
+      "required": false,
+      "type": "String"
+    },
+    {
+      "allowedFilterOperators": [
+        "contains",
+        "eq",
+        "gt",
+        "gte",
+        "in",
+        "lt",
+        "lte",
+        "ne",
+        "notContains",
+        "notIn",
+        "notStartsWith",
+        "startsWith"
+      ],
+      "columnName": "ResolutionSla",
+      "displayName": "Resolution SLA",
+      "key": "HjjDBPGA01Hx8nxx",
+      "minLength": 0,
+      "name": "ResolutionSla",
+      "required": false,
+      "type": "String"
+    }
+  ],
+  "key": "jogldCaErLnR8YiDbx2oBEt4sx4kWZKt",
+  "modelPermission": {
+    "name": "model permission",
+    "permissions": [
+      {"type": "nobody"},
+      {
+        "groupKeys": ["Admins"],
+        "type": "groups"
+      }
+    ],
+    "type": "compound"
+  },
+  "name": "CSATPrep",
+  "type": "BRIX",
+  "userIdFieldType": "USER_ID"
+}

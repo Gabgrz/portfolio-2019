@@ -1,0 +1,392 @@
+{
+  "class": "Panel",
+  "key": "aILM2ofP0rK7W3GyIkulx08jp2JR7HDt",
+  "permission": {
+    "name": "canRead",
+    "type": "compoundEveryone"
+  },
+  "propList": [
+    {
+      "k": "styleMap",
+      "v": {
+        "name": "styleMap",
+        "properties": [],
+        "type": "PropertyMap[styleMap]"
+      }
+    },
+    {
+      "k": "width",
+      "v": 800
+    },
+    {
+      "k": "height",
+      "v": 223
+    },
+    {
+      "k": "name",
+      "v": "Header"
+    },
+    {
+      "k": "isCustomWidget",
+      "v": true
+    },
+    {
+      "k": "top",
+      "v": 4
+    },
+    {
+      "k": "left",
+      "v": 4
+    },
+    {
+      "k": "styles",
+      "v": {
+        "list": ["header-widget"],
+        "type": "List[String]"
+      }
+    },
+    {
+      "k": "children",
+      "v": {
+        "list": [{
+          "class": "Panel",
+          "key": "0_99316946",
+          "propList": [
+            {
+              "k": "styleMap",
+              "v": {
+                "name": "styleMap",
+                "properties": [],
+                "type": "PropertyMap[styleMap]"
+              }
+            },
+            {
+              "k": "width",
+              "v": 800
+            },
+            {
+              "k": "height",
+              "v": 100
+            },
+            {
+              "k": "layout",
+              "v": "horizontal"
+            },
+            {
+              "k": "name",
+              "v": "HeaderContainer"
+            },
+            {
+              "k": "left",
+              "v": 0
+            },
+            {
+              "k": "top",
+              "v": 0
+            },
+            {
+              "k": "right",
+              "v": 0
+            },
+            {
+              "k": "bottom",
+              "v": 123
+            },
+            {
+              "k": "styles",
+              "v": {
+                "list": ["header"],
+                "type": "List[String]"
+              }
+            },
+            {
+              "k": "alignChildren",
+              "v": "center"
+            },
+            {
+              "k": "variant",
+              "v": "Primary"
+            },
+            {
+              "k": "children",
+              "v": {
+                "list": [
+                  {
+                    "class": "HtmlArea",
+                    "key": "5_2026354083",
+                    "propList": [
+                      {
+                        "k": "styleMap",
+                        "v": {
+                          "name": "styleMap",
+                          "properties": [
+                            {
+                              "name": "margin-left",
+                              "value": "18px"
+                            },
+                            {
+                              "name": "margin-right",
+                              "value": "18px"
+                            },
+                            {
+                              "name": "padding-top",
+                              "value": {
+                                "isNull": true,
+                                "type": "String"
+                              }
+                            },
+                            {
+                              "name": "margin-top",
+                              "value": "2px"
+                            }
+                          ],
+                          "type": "PropertyMap[styleMap]"
+                        }
+                      },
+                      {
+                        "k": "html",
+                        "v": "\u003ch1 style \u003d \"color: white; font-size: 20sp;\"\u003e Cross-Vendor \u003cbr\u003e Callback Request App \u003c\/h1\u003e"
+                      },
+                      {
+                        "k": "width",
+                        "v": 256
+                      },
+                      {
+                        "k": "height",
+                        "v": 95
+                      },
+                      {
+                        "k": "name",
+                        "v": "Html1"
+                      },
+                      {
+                        "k": "left",
+                        "v": 0
+                      },
+                      {
+                        "k": "top",
+                        "v": 0
+                      },
+                      {
+                        "k": "autoWidth",
+                        "v": true
+                      },
+                      {
+                        "k": "autoHeight",
+                        "v": true
+                      },
+                      {
+                        "k": "right",
+                        "v": 0
+                      },
+                      {
+                        "k": "bottom",
+                        "v": 0
+                      },
+                      {
+                        "k": "constrain_left",
+                        "v": true
+                      },
+                      {
+                        "k": "constrain_right",
+                        "v": false
+                      },
+                      {
+                        "k": "constrain_width",
+                        "v": true
+                      },
+                      {
+                        "k": "constrain_minWidth",
+                        "v": false
+                      },
+                      {
+                        "k": "constrain_maxWidth",
+                        "v": false
+                      },
+                      {
+                        "k": "constrain_top",
+                        "v": true
+                      },
+                      {
+                        "k": "constrain_bottom",
+                        "v": false
+                      },
+                      {
+                        "k": "constrain_height",
+                        "v": true
+                      },
+                      {
+                        "k": "constrain_minHeight",
+                        "v": false
+                      },
+                      {
+                        "k": "constrain_maxHeight",
+                        "v": false
+                      }
+                    ],
+                    "type": "ComponentInfo"
+                  },
+                  {
+                    "class": "HtmlArea",
+                    "key": "0_578470667",
+                    "propList": [
+                      {
+                        "k": "styleMap",
+                        "v": {
+                          "name": "styleMap",
+                          "properties": [
+                            {
+                              "name": "padding-top",
+                              "value": {
+                                "isNull": true,
+                                "type": "String"
+                              }
+                            },
+                            {
+                              "name": "margin-top",
+                              "value": "2px"
+                            }
+                          ],
+                          "type": "PropertyMap[styleMap]"
+                        }
+                      },
+                      {
+                        "k": "html",
+                        "v": "\u003chr width\u003d\"0\" size\u003d\"90\"\u003e \u003c\/hr\u003e"
+                      },
+                      {
+                        "k": "width",
+                        "v": 32
+                      },
+                      {
+                        "k": "height",
+                        "v": 100
+                      },
+                      {
+                        "k": "name",
+                        "v": "Html2"
+                      },
+                      {
+                        "k": "left",
+                        "v": 0
+                      },
+                      {
+                        "k": "top",
+                        "v": 0
+                      },
+                      {
+                        "k": "autoWidth",
+                        "v": false
+                      },
+                      {
+                        "k": "autoHeight",
+                        "v": true
+                      },
+                      {
+                        "k": "grow",
+                        "v": 0
+                      },
+                      {
+                        "k": "align",
+                        "v": "stretch"
+                      },
+                      {
+                        "k": "right",
+                        "v": 768
+                      },
+                      {
+                        "k": "bottom",
+                        "v": 25
+                      }
+                    ],
+                    "type": "ComponentInfo"
+                  },
+                  {
+                    "class": "ImageComponent",
+                    "key": "0_469286278",
+                    "propList": [
+                      {
+                        "k": "styleMap",
+                        "v": {
+                          "name": "styleMap",
+                          "properties": [
+                            {
+                              "name": "margin-left",
+                              "value": "5px"
+                            },
+                            {
+                              "name": "margin-top",
+                              "value": "2px"
+                            }
+                          ],
+                          "type": "PropertyMap[styleMap]"
+                        }
+                      },
+                      {
+                        "k": "width",
+                        "v": 71
+                      },
+                      {
+                        "k": "height",
+                        "v": 78
+                      },
+                      {
+                        "k": "url",
+                        "v": "resources/google-apps-script-9323e309-74bf-4dfe-a50e-f2f6aa4c41c1/gmdSDEYPgGpv.png"
+                      },
+                      {
+                        "k": "name",
+                        "v": "Image1"
+                      },
+                      {
+                        "k": "left",
+                        "v": 0
+                      },
+                      {
+                        "k": "top",
+                        "v": 0
+                      },
+                      {
+                        "k": "right",
+                        "v": 729
+                      },
+                      {
+                        "k": "bottom",
+                        "v": 22
+                      }
+                    ],
+                    "type": "ComponentInfo"
+                  }
+                ],
+                "type": "List[ComponentInfo]"
+              }
+            },
+            {
+              "k": "autoWidth",
+              "v": false
+            },
+            {
+              "k": "constrain_right",
+              "v": true
+            },
+            {
+              "k": "constrain_width",
+              "v": false
+            }
+          ],
+          "type": "ComponentInfo"
+        }],
+        "type": "List[ComponentInfo]"
+      }
+    },
+    {
+      "k": "variant",
+      "v": "Transparent"
+    },
+    {
+      "k": "pageCss",
+      "v": "  .app-Header-Image1 {\n    resize: both;\n    overflow: auto;\n}\n"
+    }
+  ],
+  "type": "ComponentInfo"
+}
