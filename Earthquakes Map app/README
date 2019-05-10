@@ -1,10 +1,6 @@
 This includes the skeleton to use Unfolding in Eclipse, my own code and extensions, as well as some starter
 code for the Object Oriented Programming in Java course offered by UC San Diego through Coursera.
 
-A very basic Unfolding demo you'll find in the source folder in the default package. 
-For more examples visit http://unfoldingmaps.org, or download the template with
-examples.
-
 The "final_version" folder includes the final version of my application. 
 The module folders contain the starter code for the programming assignments
 associated with the MOOC.
