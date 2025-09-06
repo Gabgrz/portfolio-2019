@@ -1,6 +1,6 @@
 # Portfolio 2019
 
-A collection of programming projects from 2019 and earlier.
+Programming projects from 2019 and earlier.
 
 ## Projects
 
